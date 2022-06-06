@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title dir='ltr'>Fudge Sunday - Get High On a New Thing | Revue</title>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='Start the week more informed 🤔💡🤯🤓 - A song, lyric, and tweets to connect it back to the edge, core, and cloud.This issue is part 4 of a 5 part seriesFudge Sunday' name='description'>
+<meta content='newsletter, email, digest, curation' name='keywords'>
+<!--[if lt IE 9]>
+<script src="//d3jbm9h03wxzi9.cloudfront.net/assets/html5shiv-bb669dd537dfdfb80f5581532f95e3d93d4e161976d46f6a8ea5c49c57cafbc8.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="https://d3jbm9h03wxzi9.cloudfront.net/assets/application-4eeb1b015e3c86cc20dbdc72a26232e7574974f39c773bc496318055f4845771.css" nonce="C86tB7w1/1Pb6EhIyGWqiw==" />
+<script src="https://d3jbm9h03wxzi9.cloudfront.net/assets/application-901c68fbeb648527956c564a7cd26e41a62f2936c423314ff981aae933cbd647.js" nonce="C86tB7w1/1Pb6EhIyGWqiw==" defer="defer"></script>
+<script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+document.addEventListener('DOMContentLoaded', function() {
+  I18n.defaultLocale = "en";
+  I18n.locale = "en";
+});
+
+
+
+//]]>
+</script><link href='https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-4bca5727fc21fa6ee2a6ae554a6c236825acdd046c481ffce5748911f8b1f4a3.ico' rel='icon' size='16x16'>
+<link href='https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-4bca5727fc21fa6ee2a6ae554a6c236825acdd046c481ffce5748911f8b1f4a3.ico' rel='icon' size='32x32'>
+<link color='#E15718' href='https://d3jbm9h03wxzi9.cloudfront.net/assets/icon-3ef15b89ab8676cd48dac6b7878bbc0e564d4e4167ea590f1f49d8e596d1ee4b.svg' rel='mask-icon'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="cGmgObQuO68M91rlLA33vztGQ/sOfPSqi9PzdxDHxRRGE6kN6dgamX51wymVoVJTVHJLS3DgCQhEuT8scU7/sQ==" />
+<meta name="csp-nonce" content="C86tB7w1/1Pb6EhIyGWqiw==" />
+
+<script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+  function getQueryParam(url, param) {
+    // Expects a raw URL
+    param = param.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + param + "=([^&#]*)",
+    regex = new RegExp( regexS ),
+    results = regex.exec(url);
+    if (results === null || (results && typeof(results[1]) !== 'string' && results[1].length)) {
+      return '';
+    } else {
+      return decodeURIComponent(results[1]).replace(/\+/g, ' ');
+    }
+  };
+
+  function geUtmParams() {
+    var campaign_keywords = 'utm_source utm_medium utm_campaign utm_content utm_term'.split(' ')
+    , kw = ''
+    , params = {}
+    , first_params = {}
+    , result = {};
+
+    var index;
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        params[campaign_keywords[index] + ' [last touch]'] = kw;
+      }
+    }
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        first_params[campaign_keywords[index]] = kw;
+      }
+    };
+
+    result.first_params = first_params;
+    result.params = params;
+
+    return result;
+  }
+
+  function extractReferrer(referrer) {
+    campaign = geUtmParams().first_params["utm_campaign"];
+    ref = getQueryParam(document.URL, 'ref');
+
+    if(!campaign && !ref) {
+      if (/www\.getrevue\.co\/profile\/(.*?)\/issue/.test(window.location.href)) {
+        return 'Revue Profile Issue'
+      } else if(/www\.getrevue\.co\/profile/.test(window.location.href)) {
+        return 'Revue Profile'
+      }
+    }
+
+    if(!!campaign) {
+      return campaign;
+    } else if (referrer.search('https?://(.*)google.([^/?]*)') === 0) {
+      return 'Google';
+    } else if (referrer.search('https?://(.*)bing.([^/?]*)') === 0) {
+      return 'Bing';
+    } else if (referrer.search('https?://(.*)yahoo.([^/?]*)') === 0) {
+      return 'Yahoo';
+    } else if (referrer.search('https?://(.*)facebook.([^/?]*)') === 0) {
+      return 'Facebook';
+    } else if (referrer.search('https?://(.*)twitter.([^/?]*)') === 0 || referrer.search('https?://(.*)t.co/') === 0) {
+      return 'Twitter';
+    } else if (referrer.search('https?://(.*)linkedin.([^/?]*)') === 0) {
+      return 'LinkedIn'
+    } else if (referrer == '$direct' || (!referrer || /^\s*$/.test(referrer))) {
+      return '$direct';
+    } else if (referrer.search('https?://(.*)getrevue.co') == 0) {
+      if(/\/app\//.test(referrer)) {
+        return 'Revue App';
+      } else if (/\/profile\/(.*?)\/issue/.test(referrer)) {
+        return 'Revue Profile Issue'
+      } else if (/\/profile\//.test(referrer)) {
+        return 'Revue Profile'
+      } else if (/blog\.getrevue\.co/.test(referrer)) {
+        return 'Revue Blog'
+      } else {
+        return 'Revue Page'
+      }
+    } else if (referrer.search('https?://(.*)rev.vu([^/?]*)') === 0) {
+      return 'Revue Item';
+    } else if (!!ref) {
+      return ref;
+    } else {
+      tld = new RegExp('\.(asn\.au|com\.au|net\.au|id\.au|org\.au|edu\.au|gov\.au|csiro\.au|act\.au|nsw\.au|nt\.au|qld\.au|sa\.au|tas\.au|vic\.au|wa\.au|co\.at|or\.at|priv\.at|ac\.at|avocat\.fr|aeroport\.fr|veterinaire\.fr|co\.hu|film\.hu|lakas\.hu|ingatlan\.hu|sport\.hu|hotel\.hu|ac\.il|co\.il|org\.il|net\.il|k12\.il|gov\.il|muni\.il|idf\.il|ac\.za|gov\.za|law\.za|mil\.za|nom\.za|school\.za|net\.za|co\.uk|org\.uk|me\.uk|ltd\.uk|plc\.uk|net\.uk|sch\.uk|ac\.uk|gov\.uk|mod\.uk|nhs\.uk|police\.uk)')
+      a = document.createElement('a');
+      a.href = referrer;
+      ref = a.hostname;
+      if(tld.test(ref)) {
+        return ref.replace(tld, '').split('.').pop()
+      } else {
+        return ref.split('.').reverse()[1];
+      }
+    }
+  };
+
+  function getReferrer() {
+    ref = document.referrer;
+    return extractReferrer(ref);
+  }
+
+  function mixpanelLoaded() {
+    try {
+      // Set ref
+      initial_ref = mixpanel.get_property('$initial_referrer');
+      mixpanel.register_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"$created": new Date().toISOString()});
+
+      // Set distinct id
+      var member_distinct_id_element = document.querySelector('#member_distinct_id');
+      member_distinct_id_element.value = mixpanel.get_distinct_id();
+    } catch(e) {}
+  };
+
+//]]>
+</script>
+<script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("2087bc32dd14049d6de8a339112517d9", {loaded: mixpanelLoaded, ip: false});
+//]]>
+</script>
+
+<script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+  var utm = geUtmParams();
+  mixpanel.register(utm.params);
+
+//]]>
+</script>
+<link href="fudge-sunday-get-high-on-a-new-thing-679408.html" rel='canonical'>
+
+<meta content='86400' property='twitter:maxage'>
+<meta content='21000' property='twitter:revue:account:id'>
+<meta content='Start the week more informed 🤔💡🤯🤓' property='twitter:newsletter:title'>
+<meta content='Sometimes a song, always a topic (or two), a read, and a repo -- every Sunday!' property='twitter:newsletter:description'>
+<meta content='http://sunday.fudge.org/?via=twitter-card' property='twitter:newsletter:profile:url'>
+<meta content='true' property='twitter:newsletter:issue:card'>
+<meta content='https://imgix.revue.co/profiles/images/000/021/457/original/IMG_2934.png?ixlib=rails-3.1.0' property='twitter:newsletter:image:src'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-get-high-on-a-new-thing-679408?via=twitter-card' property='twitter:newsletter:sample:issue:url'>
+<meta content='Fudge Sunday - Get High On a New Thing' property='twitter:issue:title'>
+<meta content='Hello again. Welcome to part 4 of 5 in this series. Let&#39;s recap.Previously, I mentioned the role of the edge and data gravity. Next, I went into a bit more detail on everything from the millions of places with data today and the many millions of places that will follow. Then, I went into how mobile and extraterrestrial vantage points are shaping how we think about data gravity.' property='twitter:issue:description'>
+<meta content='22' property='twitter:issue:number'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-get-high-on-a-new-thing-679408?via=twitter-card' property='twitter:issue:url'>
+<meta content='https://imgix.revue.co/items/images/009/942/462/mail/maxresdefault.jpg?ixlib=rails-3.1.0' property='twitter:issue:image:src'>
+<meta content='659013' property='twitter:user:id'>
+<meta content='summary_large_image' property='twitter:card'>
+<meta content='@JayCuthrell' property='twitter:site'>
+<meta content='1073732649320413' property='fb:app_id'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-get-high-on-a-new-thing-679408' property='og:url'>
+<meta content='article' property='og:type'>
+<meta content='Fudge Sunday - Get High On a New Thing' property='og:title'>
+<meta content='Hello again. Welcome to part 4 of 5 in this series. Let&#39;s recap.Previously, I mentioned the role of the edge and data gravity. Next, I went into a bit more detail on everything from the millions of places with data today and the many millions of places that will follow. Then, I went into how mobile and extraterrestrial vantage points are shaping how we think about data gravity.' property='og:description'>
+<meta content='https://s3.amazonaws.com/revue/issue_images/images/000/289/484/original/issue_image_679408.jpg?1627250267' property='twitter:image'>
+<meta content='https://s3.amazonaws.com/revue/issue_images/images/000/289/484/original/issue_image_679408.jpg?1627250267' property='og:image'>
+<meta content='https://s3.amazonaws.com/revue/profile_covers/images/000/000/668/original/Untitled_design.png?1649077741' property='og:image'>
+
+
+</head>
+<body class='profiles archive' data-page='ProfilesArchive'>
+<script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58968534-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+
+//]]>
+</script>
+<style>
+  .component__issue-page .premium-issue-details a {
+    color: #000;
+  }
+</style>
+<div class='component__issue-page component__profile-layout'>
+<div class='component__issue-page__sticky-navigation'>
+<style>
+  ::selection {background-color: #000;color: #FFF;}
+  .component__profile-header { background-color: #fff; box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.04); }
+  .component__profile-header__bar { background-color: #000 }
+</style>
+<div class='component__profile-header'>
+<div class='component__profile-header__bar'></div>
+<div class='profile-layout-row'>
+<div class='profile-layout-columns'>
+<div class='profile-layout-column'>
+<style>
+  .component__profile-intro-header .component__button {
+    background-color: #000;
+    border-color: #000;
+    color: #ffffff;
+  }
+  .component__profile-intro-header h1 {
+    color: #000;
+  }
+</style>
+<div class='component__profile-intro-header'>
+<div class='component__profile-intro-header__content'>
+<a href="../index.html">
+<h1 title='Start the week more informed 🤔💡🤯🤓'>Start the week more informed 🤔💡🤯🤓</h1>
+</a>
+</div>
+<div class='component__profile-intro-header__action'>
+<div class='component__button component__button--is-primary'>
+<a data-toggle="modal" data-target="#profile-subscribe-modal-form" href="fudge-sunday-get-high-on-a-new-thing-679408.html#">Subscribe</a>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<style>
+  ::selection {background-color: #000;color: #FFF;}
+  .component__profile-header { background-color: #fff; box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.04); }
+  .component__profile-header__bar { background-color: #000 }
+</style>
+<div class='component__profile-header'>
+<div class='component__profile-header__bar'></div>
+<div class='profile-layout-row'>
+<div class='profile-layout-columns'>
+<div class='profile-layout-column'>
+<div class='profile-layout-block profile-layout-block--with-padding--small profile-layout-block--with-border-bottom'>
+<style>
+  .component__profile-intro-header .component__button {
+    background-color: #000;
+    border-color: #000;
+    color: #ffffff;
+  }
+  .component__profile-intro-header h1 {
+    color: #000;
+  }
+</style>
+<div class='component__profile-intro-header'>
+<div class='component__profile-intro-header__content'>
+<a href="../index.html">
+<h1 title='Start the week more informed 🤔💡🤯🤓'>Start the week more informed 🤔💡🤯🤓</h1>
+</a>
+<h2 title='By Jay Cuthrell'>By Jay Cuthrell</h2>
+</div>
+<div class='component__profile-intro-header__action'>
+<div class='component__button component__button--is-primary'>
+<a data-toggle="modal" data-target="#profile-subscribe-modal-form" href="fudge-sunday-get-high-on-a-new-thing-679408.html#">Subscribe</a>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class='profile-layout-row'>
+<div class='profile-layout-columns'>
+<div class='profile-layout-column profile-layout-column--is-left'>
+<div class='profile-layout-block profile-layout-block--with-padding--small'>
+<div class='component__profile-issue-item component__profile-issue-item--is-minimal'>
+<h1>Fudge Sunday - Get High On a New Thing</h1>
+<div class='profile-issue-item-header'>
+<strong>
+#22・
+<time datetime='2021-07-25T21:57:41Z'>Jul 25, 2021</time>
+</strong>
+</div>
+</div>
+
+</div>
+</div>
+<div class='profile-layout-column profile-layout-column--is-right'>
+<div class='profile-layout-block profile-layout-block--is-floating profile-layout-block--with-padding--small'>
+<style>
+  .component__author-and-member-plan-card .component__support-member-plan-card {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  
+  .component__author-and-member-plan-card .component__support-member-plan-card .component__button {
+    border-color: #000;
+    color: #000;
+  }
+</style>
+<style>
+  .component__author-card .social-accounts-list a { color: #000 }
+</style>
+<div class='component__card component__card--has-spacing'>
+<div class='component__author-card'>
+<img alt="Start the week more informed 🤔💡🤯🤓" src="https://s3.amazonaws.com/revue/profiles/images/000/021/457/thumb/IMG_2934.png?1653429860" />
+<div class='author-information'>
+<div class='social-accounts-list'>
+<a target="_blank" href="https://JayCuthrell.com"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.47 6.215a4.466 4.466 0 0 1 6.315 6.315l-1.095 1.095a.75.75 0 1 1-1.06-1.06l1.094-1.095a2.966 2.966 0 1 0-4.194-4.195L11.436 8.37a.75.75 0 0 1-1.061-1.06l1.095-1.095Zm-3.1 4.16a.75.75 0 0 1 0 1.06L7.276 12.53a2.966 2.966 0 0 0 4.194 4.194l1.094-1.094a.75.75 0 0 1 1.061 1.06l-1.095 1.095a4.465 4.465 0 1 1-6.315-6.315l1.095-1.095a.75.75 0 0 1 1.06 0Zm6.13.185a.75.75 0 1 0-1.06-1.06L9.5 13.44a.75.75 0 0 0 1.06 1.06l3.94-3.94Z"/></svg>
+</a><a target="_blank" href="https://twitter.com/JayCuthrell"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M9.033 18.5c6.037 0 9.34-5.002 9.34-9.339 0-.14-.004-.284-.01-.425A6.667 6.667 0 0 0 20 7.037a6.472 6.472 0 0 1-1.884.516 3.3 3.3 0 0 0 1.443-1.816 6.599 6.599 0 0 1-2.083.797 3.287 3.287 0 0 0-5.596 2.993A9.323 9.323 0 0 1 5.115 6.1a3.286 3.286 0 0 0 1.016 4.38 3.286 3.286 0 0 1-1.487-.41v.041a3.281 3.281 0 0 0 2.633 3.22c-.482.131-.989.15-1.48.056a3.29 3.29 0 0 0 3.065 2.28A6.583 6.583 0 0 1 4 17.027 9.312 9.312 0 0 0 9.033 18.5Z"/></svg>
+</a><a target="_blank" href="https://linkedin.com/in/JayCuthrell"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.816 4H5.18C4.528 4 4 4.516 4 5.153v13.69A1.17 1.17 0 0 0 5.181 20h13.635c.653 0 1.184-.519 1.184-1.153V5.153C20 4.516 19.469 4 18.816 4ZM8.746 17.634H6.373V9.997h2.375v7.637ZM7.56 8.956a1.376 1.376 0 1 1-.004-2.751 1.376 1.376 0 0 1 .004 2.751Zm10.075 8.678h-2.372v-3.712c0-.885-.015-2.025-1.234-2.025-1.234 0-1.422.966-1.422 1.962v3.775h-2.368V9.997h2.274v1.044h.032c.315-.6 1.09-1.235 2.243-1.235 2.404 0 2.847 1.582 2.847 3.638v4.19Z"/></svg>
+</a><a target="_blank" href="https://medium.com/jaycuthrell"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.897 12c0 2.2-1.768 3.983-3.949 3.983C6.768 15.983 5 14.199 5 12c0-2.2 1.768-3.983 3.948-3.983 2.181 0 3.949 1.783 3.949 3.983Zm4.331 0c0 2.07-.884 3.75-1.974 3.75-1.09 0-1.974-1.68-1.974-3.75 0-2.07.884-3.75 1.974-3.75 1.09 0 1.974 1.679 1.974 3.75Zm1.078 3.359c.383 0 .694-1.504.694-3.359s-.311-3.359-.694-3.359c-.384 0-.695 1.504-.695 3.359s.311 3.359.695 3.359Z"/></svg>
+</a><a target="_blank" href="https://www.snapchat.com/add/jaycuthrell"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M8.14305 7.39569C7.76804 8.23571 7.91617 9.74073 7.97617 10.7933C7.57116 11.0176 7.05115 10.6239 6.75677 10.6239C6.45052 10.6239 6.08489 10.8251 6.02738 11.1251C5.98614 11.3414 6.08301 11.6564 6.77802 11.9308C7.04678 12.037 7.68617 12.162 7.8343 12.5108C8.04242 13.0008 6.76552 15.2627 4.76049 15.5927C4.6036 15.6183 4.49173 15.7583 4.50048 15.9171C4.53548 16.5265 5.90176 16.7652 6.5074 16.859C6.56927 16.9427 6.61928 17.2965 6.69865 17.5659C6.73427 17.6865 6.82615 17.8309 7.0624 17.8309C7.37053 17.8309 7.88242 17.5934 8.77369 17.7409C9.64745 17.8865 10.4687 19.1253 12.0456 19.1253C13.5113 19.1253 14.3857 17.8809 15.2269 17.7409C15.7138 17.6603 16.132 17.6859 16.5995 17.7771C16.9213 17.8402 17.2101 17.8753 17.302 17.559C17.3826 17.2859 17.432 16.939 17.4926 16.8571C18.0926 16.764 19.4651 16.5259 19.4995 15.9165C19.5082 15.7577 19.3964 15.6183 19.2395 15.5921C17.2682 15.2671 15.9526 13.012 16.1657 12.5102C16.3132 12.162 16.9482 12.0383 17.222 11.9301C17.7307 11.7295 17.9857 11.4826 17.9801 11.197C17.9733 10.8314 17.5332 10.6132 17.2095 10.6132C16.8801 10.6132 16.407 11.0032 16.0238 10.792C16.0838 9.73072 16.2313 8.23257 15.8569 7.39317C15.1476 5.80376 13.5694 5 11.9919 5C10.4243 5 8.85806 5.79252 8.14305 7.39567V7.39569Z" /></svg>
+</a></div>
+</div>
+</div>
+
+</div>
+
+
+<div class='component__stats-card'>
+<div class='component__card component__card--has-spacing'>
+<div class='stat-row'>
+<div class='stat-column'>
+<strong class='stat-number'>1.22K</strong>
+<p class='stat-number'>subscribers</p>
+</div>
+<div class='stat-column'>
+<strong class='stat-number'>67</strong>
+<p class='stat-number'>issues</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<style>
+  .component__profile-subscribe-form--is-modal .modal-body a svg { color: #000; }
+</style>
+<div class='component__profile-subscribe-form component__profile-subscribe-form--is-card'>
+<p>Subscribe to our newsletter</p>
+<style>
+  .component__profile-subscribe-form h1 { color: #000 }
+  .component__profile-subscribe-form .component__button { background-color: #000; border-color: #000 }
+  .component__profile-subscribe-form .component__button:hover { background-color: #000; border-color: #000 }
+  .component__form-input input[type=email] { outline-color: #000;}
+</style>
+<form class="new_member" id="5GMeGxFG_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="tWz8o8u6YF8ijGkHkx9oZ+UpxbF66H3GCG67bIsQalCDFvWXlkxBaVAO8Msqs82Lih3NAQR0gGTHBHc36plQ9Q==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-sidebar" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='profile-form-fields-container'>
+<div class='component__form-input'>
+<input id="member_email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed 🤔💡🤯🤓" type="email" name="member[email]" />
+<p>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed 🤔💡🤯🤓 will receive your email address.</p>
+
+</div>
+<div class='component-form-input-submit'>
+<div class='component__button component__button--is-primary-block'>
+<script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='C86tB7w1/1Pb6EhIyGWqiw=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="und9TFWcCaptchaCallback" class="g-recaptcha " title="Subscribe to the newsletter of Start the week more informed 🤔💡🤯🤓" value="Subscribe now"/>
+
+
+</div>
+</div>
+
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_hESqFN" id="confirm_hESqFN" autocomplete="off" />
+</div>
+
+</form><script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+window["und9TFWcCaptchaCallback"] = function() {
+  document.getElementById("5GMeGxFG_new_member").submit();
+};
+
+// Show terms field after focus
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById("5GMeGxFG_new_member");
+    if (!form) {
+      return;
+    }
+
+    var termsParagraph = form.querySelector('.profile-form-fields-container p');
+    var emailField = form.querySelector('input[name="member[email]"');
+    if (emailField !== null && termsParagraph !== null) {
+      emailField.addEventListener('focus', function() {
+        termsParagraph.classList.add('visible');
+      });
+    }
+  });
+})();
+
+
+//]]>
+</script>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class='profile-layout-row'>
+<div class='profile-layout-columns'>
+<div class='profile-layout-column profile-layout-column--is-left'>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <title></title>
+  <!--[if !mso]><!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; padding: 0; margin: 0; margin-bottom: 0; }
+  .revue-p + .revue-p, .revue-p + .revue-blockquote {margin-top: 14px !important;}
+  .revue-p + .revue-h2 {margin-top: 28px !important;}
+  .revue-h2 {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; font-size: 20px; line-height: 28px; font-weight: 700;padding-bottom: 8px;}
+  [class*="revue-p"] + [class*="revue-p"], [class*="revue-p"] + [class*="revue-blockquote"] {margin-top: 14px !important;}
+  [class*="revue-p"] + [class*="revue-h2"] {margin-top: 28px !important;}
+</style>
+<!--[if !mso]><!-->
+<style type="text/css">
+  @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }
+</style>
+<!--<![endif]-->
+<!--[if mso]>
+<style type="text/css">
+  .revue-p,
+  .revue-h2,
+  .revue-ul,
+  .revue-ol,
+  .revue-blockquote {margin-bottom: 14px !important;}
+</style>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<!--[if lte mso 11]>
+<style type="text/css">
+  .outlook-group-fix {
+    width:100% !important;
+  }
+</style>
+<![endif]-->
+<style type="text/css">
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100 { width:100%!important; }
+    .mj-column-per-100 { width:100%!important; }
+    .mj-column-per-25 { width:25.9259259259%!important; }
+    .mj-column-per-74 { width:74.0740740741%!important; }
+    .mj-column-per-50 { width:50%!important; }
+    .mj-column-per-60 { width:60%!important; }
+    .mj-column-per-20 { width:20%!important; }
+  }
+
+  @media screen and (max-width:600px) {
+    .indented {padding-left: 20px !important; padding-right: 20px !important;}
+    .link-title {font-size: 18px !important; line-height: 24px !important;}
+    .link-image {width: 112px !important;}
+    .link-description {font-size: 14px !important; line-height: 22px !important;}
+    .link-url {font-size: 13px !important;}
+    .header-text {font-size: 20px !important; line-height: 28px !important;}
+    .introduction-subject {font-size: 24px !important; line-height: 28px !important;}
+    .introduction-spacer {padding: 30px 0 !important;}
+    .text-default {font-size: 16px !important; line-height: 24px !important;}
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div id="preheader" style="display:none;font-size:1px;color:#FFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">A song, lyric, and tweets to connect it back to the edge, core, and cloud. This issue is part 4 of a </div>
+
+    
+
+      <!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+    <tr>
+      <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+  <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-top:28px;"><!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+  <![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:600px;"><img alt="Start the week more informed 🤔💡🤯🤓" title="" height="auto" src="https://s3.amazonaws.com/revue/profile_covers/images/000/000/668/cover/Untitled_design.png?1649077741" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="600"></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
+  </td></tr></table>
+  <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+  </td></tr></table>
+  <![endif]-->
+
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;padding-top:48px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:10px;" align="left"><div style="cursor:auto;color:#111111;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:30px;font-weight:700;line-height:36px;text-align:left;" class="introduction-subject">
+      Fudge Sunday - Get High On a New Thing
+    </div></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:16px;line-height:20px;text-align:left;font-weight:500;color: #000;">
+      By <a style="color: #000" href="../index.html@utm_campaign=Issue&amp;utm_content=topprofilename&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed+🤔💡🤯🤓.html">Jay Cuthrell</a>&nbsp;&bull;&nbsp;Issue #22<span style="color: #A7ADB5">&nbsp;&bull;&nbsp;</span><a target="_blank" style="color: #A7ADB5;" href="fudge-sunday-get-high-on-a-new-thing-679408@utm_campaign=Issue&amp;utm_content=view_in_browser&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed+🤔💡🤯🤓.html">View online</a>
+    </div></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:28px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default"><div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">A song, lyric, and tweets to connect it back to the edge, core, and cloud.</div><div style="margin:0;" class="revue-p">This issue is part 4 of a 5 part series</div><ol class="revue-ol">
+<li style="margin:0;"><a href="fudge-sunday-and-the-way-that-gravity-pulls-on-everyone-673047@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;"><strong>Fudge Sunday - And the way that gravity pulls on everyone</strong></a></li>
+<li style="margin:0;"><a href="fudge-sunday-and-all-points-in-between-679406@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;"><strong>Fudge Sunday - And All Points In Between</strong></a></li>
+<li style="margin:0;"><a href="fudge-sunday-all-along-the-watchtower-679407@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;"><strong>Fudge Sunday - All Along the Watchtower</strong></a></li>
+<li style="margin:0;"><a href="fudge-sunday-get-high-on-a-new-thing-679408@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;"><strong>Fudge Sunday - Get High On a New Thing</strong></a></li>
+<li style="margin:0;"><a href="fudge-sunday-i-don-t-know-where-i-ll-be-tomorrow-679416@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;"><strong>Fudge Sunday - I Don’t Know Where I’ll Be Tomorrow</strong></a></li>
+</ol>
+
+    </div></td></tr>
+      <tr><td style="word-break:break-word;font-size:0px;padding:40px 0px;" class="introduction-spacer"><p style="font-size:1px;margin:0px auto;border-top:2px solid #E7E9EB;width:30px;"></p><!--[if mso | IE]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:1px;margin:0px auto;border-top:2px solid #E7E9EB;width:30px;" width="30"><tr><td style="height:0;line-height:0;"> </td></tr></table><![endif]--></td></tr>
+  </tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#E15718;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Get high on a new thing
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:600px;">
+  <a target="_blank" href="https://youtu.be/85BVnQMiFFw?utm_campaign=Start%20the%20week%20more%20informed%20%F0%9F%A4%94%F0%9F%92%A1%F0%9F%A4%AF%F0%9F%A4%93&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">
+    <img alt="&quot;New Thing&quot; | Enuff Z&#39;Nuff | New 16:9 Formatting" title="&quot;New Thing&quot; | Enuff Z&#39;Nuff | New 16:9 Formatting" height="auto" src="https://s3.amazonaws.com/revue/items/images/009/942/462/mail/maxresdefault.jpg?1625333108" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="600">
+</a></td></tr></tbody></table></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:16px;" align="center"><div style="cursor:auto;color:#3B424B;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:14px;line-height:16px;text-align:center;">&quot;New Thing&quot; | Enuff Z&#39;Nuff | New 16:9 Formatting</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default">
+      <div style="margin:0;" class="revue-p">Hello again. Welcome to part 4 of 5 in this series. Let’s recap.</div><div style="margin:0;" class="revue-p">Previously, I mentioned the role of the <a href="fudge-sunday-and-the-way-that-gravity-pulls-on-everyone-673047@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;">edge and data gravity</a>. Next, I went into a bit more detail on everything from <a href="fudge-sunday-and-all-points-in-between-679406@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;">the millions of places with data today and the many millions of places that will follow</a>. Then, I went into <a href="fudge-sunday-all-along-the-watchtower-679407@utm_campaign=Start&#32;the&#32;week&#32;more&#32;informed&#32;🤔💡🤯🤓&amp;utm_medium=email&amp;utm_source=Revue&#32;newsletter.html" target="_blank" style="color:#06F;text-decoration:underline;">how mobile and extraterrestrial vantage points are shaping how we think</a> about data gravity.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#E15718;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Kind of on investigation
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default">
+      <div style="margin:0;" class="revue-p">Let’s start with another question. What would it be like if the top of every cell tower was augmented with more than a mast for a GPS receiver to the sky? </div><div style="margin:0;" class="revue-p">Imagine the number and density of the towers becoming less about line of sight topology tower to tower and (front) backhaul tower to tower network capacity. In fact, the role of the tower could be to take network traffic and machine to machine localized information to and from the satellite network. </div><div style="margin:0;" class="revue-p">Next, take note that the emerging trends from <a href="https://fudge.org/social-telecom?utm_campaign=Start%20the%20week%20more%20informed%20%F0%9F%A4%94%F0%9F%92%A1%F0%9F%A4%AF%F0%9F%A4%93&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">social telecom</a> in 2010 and 2020 <a href="https://fudge.org/social-telecom-2030?utm_campaign=Start%20the%20week%20more%20informed%20%F0%9F%A4%94%F0%9F%92%A1%F0%9F%A4%AF%F0%9F%A4%93&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">will apply in 2030</a>. Now, consider what a small data center or many small data centers in a halo ring around what is now a satellite base station could mean and that’s where things start to get interesting.</div><div style="margin:0;" class="revue-p">In fact, pundits already refer to these small computing environments as mini or micro data centers. The increased frequency of such references will follow the developments that occur in <a href="https://www.opengridalliance.org?utm_campaign=Start%20the%20week%20more%20informed%20%F0%9F%A4%94%F0%9F%92%A1%F0%9F%A4%AF%F0%9F%A4%93&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">alliances</a> and shipping solutions within the IT market.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#E15718;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Everybody wants to find it
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default">
+      <div style="margin:0;" class="revue-p">Previously, we noted that over time, satellite base stations start to look like more of what we call cell towers today. Also, just like the cell towers that ended up on the top of buildings you will have base stations on the tops of every building with a clear view of the sky.</div><div style="margin:0;" class="revue-p">The early days of point to point connections or a point to multi point connections on buildings were to get around some of the legacy challenges with access involving incumbent telecommunications companies. As such, it may become even more important to consider the topic of roof rights when leasing a building.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#E15718;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Nursing old things make them last
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='left' style='padding: 0; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 0; font-size: 16px; color: #000;border-bottom: 1px solid #E0E4E8;' valign='top'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/monkeybrainsnet/status/1410357766451957760"><img style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;max-width:100%;height:auto;" alt="" src="https://s3.amazonaws.com/revue/items/images/010/249/648/mail/E5KY02mVkAIX4Ox.jpg?1627247268" />
+</a></td>
+</tr>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/monkeybrainsnet/status/1410357766451957760"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Monkeybrains ISP" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/127/108/thumb/_4MoxJee_normal.png?1627247269" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/monkeybrainsnet/status/1410357766451957760">Monkeybrains ISP</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/monkeybrainsnet/status/1410357766451957760">@monkeybrainsnet</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/monkeybrainsnet/status/1410357766451957760"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>New links going up in Oakland! <a href="https://t.co/XZynps8wNB" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/XZynps8wNB</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/monkeybrainsnet/status/1410357766451957760"> 6:01 PM - 30 Jun 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='left' style='padding: 0; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 0; font-size: 16px; color: #000;border-bottom: 1px solid #E0E4E8;' valign='top'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/PathFDLLC/status/1279043138066288643"><img style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;max-width:100%;height:auto;" alt="" src="https://s3.amazonaws.com/revue/items/images/010/249/660/mail/EcASofPWoAQx7CL.png?1627247425" />
+</a></td>
+</tr>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/PathFDLLC/status/1279043138066288643"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="PathFinder Digital LLC" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/127/109/thumb/wDGqCoeG_normal.png?1627247426" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/PathFDLLC/status/1279043138066288643">PathFinder Digital LLC</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/PathFDLLC/status/1279043138066288643">@PathFDLLC</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/PathFDLLC/status/1279043138066288643"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>PathFinder is pleased to support @<a class="tweet-url username" href="https://twitter.com/attochron" rel="nofollow" style="color: #06F;" target="_blank">attochron</a> Attochron LLC with its Free Space Optic (FSO) full-duplex Gbps Ethernet Backhaul Link tests in Lexington, VA. <a class="tweet-url hashtag" href="https://twitter.com/search?q=%23freespaceoptics" rel="nofollow" style="color: #06F;" target="_blank" title="#freespaceoptics">#freespaceoptics</a> <a href="https://t.co/K6lCUDm1yY" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/K6lCUDm1yY</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/PathFDLLC/status/1279043138066288643"> 9:23 AM -  3 Jul 2020
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default">
+      <div style="margin:0;" class="revue-p">Up and coming network solutions providers commonly deployed radio based systems and free space optics to solve challenges for their customers. Sometimes these challenges were in tall buildings. In other instances, niche applications with unique requirements mandated innovative approaches to solving very specific connectivity problems.</div><div style="margin:0;" class="revue-p">Typically, a “belt and suspenders” approach was only possible with relatively large amounts of capital. Now imagine access to simple ubiquitous satellite connectivity and terrestrial connectivity for the best of both worlds at prosumer to consumer accessible pricing.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#E15718;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      The way we did it in the past
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default">
+      <div style="margin:0;" class="revue-p">Our past can provide cautionary tales. Of course, having diverse network paths only helps if the stacks that rely on those paths do not converge to a single service.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='left' style='padding: 0; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 0; font-size: 16px; color: #000;border-bottom: 1px solid #E0E4E8;' valign='top'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/campuscodi/status/1418245632922370048"><img style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;max-width:100%;height:auto;" alt="" src="https://s3.amazonaws.com/revue/items/images/010/249/766/mail/E66e0PnXEAQ8chy.png?1627248742" />
+</a></td>
+</tr>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/campuscodi/status/1418245632922370048"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Catalin Cimpanu" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/127/112/thumb/BO44DPpb_normal.png?1627248742" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/campuscodi/status/1418245632922370048">Catalin Cimpanu</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/campuscodi/status/1418245632922370048">@campuscodi</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/campuscodi/status/1418245632922370048"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>The internet is on fire again. This time courtesy of Akamai DNS: <a href="https://t.co/BUusCvwNGb" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/BUusCvwNGb</a> <a href="https://t.co/JiBvzSZXJk" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/JiBvzSZXJk</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/campuscodi/status/1418245632922370048">12:24 PM - 22 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='left' style='padding: 0; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 0; font-size: 16px; color: #000;border-bottom: 1px solid #E0E4E8;' valign='top'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/KroonenburgRyan/status/1418256476053786625"><img style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;max-width:100%;height:auto;" alt="" src="https://s3.amazonaws.com/revue/items/images/010/249/770/mail/E66ov3dXoAIfWVk.jpg?1627248783" />
+</a></td>
+</tr>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/KroonenburgRyan/status/1418256476053786625"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Ryan Kroonenburg" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/127/116/thumb/ZRJvu3lM_normal.png?1627248783" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/KroonenburgRyan/status/1418256476053786625">Ryan Kroonenburg</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/KroonenburgRyan/status/1418256476053786625">@KroonenburgRyan</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/KroonenburgRyan/status/1418256476053786625"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>A lot of sys admins right now <a class="tweet-url hashtag" href="https://twitter.com/search?q=%23akamai" rel="nofollow" style="color: #06F;" target="_blank" title="#akamai">#akamai</a> <a class="tweet-url hashtag" href="https://twitter.com/search?q=%23dns" rel="nofollow" style="color: #06F;" target="_blank" title="#dns">#dns</a> <a href="https://t.co/GAyxEewNql" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/GAyxEewNql</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/KroonenburgRyan/status/1418256476053786625"> 1:07 PM - 22 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;line-height:32px;text-align:left;" class="text-default">
+      <div style="margin:0;" class="revue-p">As of this issue, the return to the office building is still a bit in flux. However, it is worth thinking about what outside network connectivity in a building could mean in the near future.</div><div style="margin:0;" class="revue-p">Perhaps the attraction (for companies that may not exist yet) will be to have a wide variety of choices to, well, decide between wide area networking, wider area networking, or the widest possible area networking.</div><div style="margin:0;" class="revue-p">It is also likely that all manner of services will further mature in the ability to make decisions to maximize availability. Further, the service chaining taking place inside of networks could be both terrestrial as well as those that are also extraterrestrial.</div><div style="margin:0;" class="revue-p">Next, the ability to move the micro data centers into orbit might sound far fetched now but so did most technology before it was democratized. So getting the technology democratized is what opens the aperture of harnessing more imaginations around the planet, above the planet, and eventually between the planets.</div><div style="margin:0;" class="revue-p">Interesting patterns will emerge. We need to keep our minds open to change because what we think of as the pattern of consumption for today might not necessarily be the pattern of consumption for tomorrow.</div><div style="margin:0;" class="revue-p">One of the common phrases associated with astronauts is the change in their perspective when seeing the Earth from the highest perch possible. Indeed, a transformation is possible for every human when the information from the sensors around us and the satellites above us form a benevolent telemetry of ever richer information that is also democratized.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#E15718;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Quote Tweeting Techmeme
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1409181624214999042"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Jay Cuthrell" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/118/804/thumb/NqFQDvSu_normal.png?1625338337" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/JayCuthrell/status/1409181624214999042">Jay Cuthrell</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1409181624214999042">@JayCuthrell</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1409181624214999042"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>The past 10 years saw democratization of data science related verbs like extract, load, transform (ELT/ETL).<br><br>The next 10 years will see new verbs* become startup mission statements that further this democratization.<br><br>* enrich, clean, validate, collate, ameliorate, deprecate, etc <a href="https://t.co/2JdpuRyhbv" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/2JdpuRyhbv</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1409181624214999042"> 2:52 PM -  3 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/Techmeme/status/1408942223375228928"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Techmeme" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/118/811/thumb/ZvfTRAlg_normal.png?1625338954" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/Techmeme/status/1408942223375228928">Techmeme</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/Techmeme/status/1408942223375228928">@Techmeme</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/Techmeme/status/1408942223375228928"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>Rasgo, a GitHub-like repository which helps data scientists explore, clean, join, and transform data sets for machine learning models, raises $20M Series A (AlleyWatch)<br><br><a href="https://t.co/53tEIxBQPv" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/53tEIxBQPv</a><br><a href="https://t.co/o5N13CkT6T" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/o5N13CkT6T</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/Techmeme/status/1408942223375228928"> 8:16 PM - 26 Jun 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1415437140104732673"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Jay Cuthrell" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/123/540/thumb/NqFQDvSu_normal.png?1626362755" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/JayCuthrell/status/1415437140104732673">Jay Cuthrell</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1415437140104732673">@JayCuthrell</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1415437140104732673"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>A preferred high ground game in metro network connectivity arbitrage is roof rights on tall buildings.🌆<br><br>I would argue that new revenue (forgive me) angles can involve creative use of dormant commercial roof rights.🌆📡🛰️<br><br>What company could possibly afford all the top floors?🤔 <a href="https://t.co/dGvqmFAvHo" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/dGvqmFAvHo</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1415437140104732673"> 6:24 PM - 14 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/Techmeme/status/1415056194398343169"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Techmeme" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/123/541/thumb/ZvfTRAlg_normal.png?1626362767" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/Techmeme/status/1415056194398343169">Techmeme</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/Techmeme/status/1415056194398343169">@Techmeme</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/Techmeme/status/1415056194398343169"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>In April, Amazon acquired over a dozen staff from Facebook to boost its own low earth orbit satellite internet efforts; Amazon paid Facebook to seal agreement (The Information)<br><br><a href="https://t.co/mlPqwlBQPQ" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/mlPqwlBQPQ</a><br><a href="https://t.co/mYr741SSeR" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/mYr741SSeR</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/Techmeme/status/1415056194398343169"> 5:11 PM - 13 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418944928097488902"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Jay Cuthrell" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/126/736/thumb/NqFQDvSu_normal.png?1627143985" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418944928097488902">Jay Cuthrell</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418944928097488902">@JayCuthrell</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418944928097488902"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>Cloud egress fees are the 2020s version of long distance charges from the 1990s. <a href="https://t.co/0dN54ON65X" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/0dN54ON65X</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418944928097488902">10:43 AM - 24 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418945477341483015"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Jay Cuthrell" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/126/737/thumb/NqFQDvSu_normal.png?1627144004" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418945477341483015">Jay Cuthrell</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418945477341483015">@JayCuthrell</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418945477341483015"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>There will be a precipitous drop in memory costs and the future of egregious egress fees for cloud hosting providers is going to shift from awkward to completely unjustifiable. <a href="https://t.co/up1aKoC3qe" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/up1aKoC3qe</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1418945477341483015">10:45 AM - 24 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:44px;"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/Techmeme/status/1418750564423241729"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Techmeme" width="36" height="36" src="https://s3.amazonaws.com/revue/tweet_items/profile_images/000/126/738/thumb/ZvfTRAlg_normal.png?1627144031" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/Techmeme/status/1418750564423241729">Techmeme</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/Techmeme/status/1418750564423241729">@Techmeme</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/Techmeme/status/1418750564423241729"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>Cloudflare accuses AWS of massive markups on egress bandwidth fees per region, estimating North American and European customers pay 80x the operational costs (The Cloudflare Blog)<br><br><a href="https://t.co/UICUo9wlJe" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/UICUo9wlJe</a><br><a href="https://t.co/Pz4J1G25U2" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/Pz4J1G25U2</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/Techmeme/status/1418750564423241729"> 9:51 PM - 23 Jul 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;"><div style="font-size:1px;line-height:22px;"> </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;border-top:1px solid #ECEEF2;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:270px;">
+<![endif]--><div aria-labelledby="mj-column-per-50" class="mj-column-per-50" style="vertical-align:top;display:inline-block;font-size:0px;line-height:0px;text-align:left;width:100%;"><!--[if mso | IE]>
+<table  role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:162px;">
+<![endif]--><div aria-labelledby="mj-column-per-60" class="mj-column-per-60 outlook-group-fix" style="vertical-align:middle;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:60%;"><table role="presentation" cellpadding="0" cellspacing="0" style="vertical-align:middle;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="right"><div style="cursor:auto;color:#3B424B;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:13px;line-height:36px;text-align:right;">
+        Did you enjoy this issue?
+      </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td><td style="vertical-align:middle;width:54px;">
+<![endif]--><div aria-labelledby="mj-column-per-20" class="mj-column-per-20 outlook-group-fix" style="vertical-align:middle;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:20%;"><table role="presentation" cellpadding="0" cellspacing="0" style="vertical-align:middle;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="right"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="right" border="0"><tbody><tr><td style="width:41px;"><img alt="" title="" height="36" style="border:none;border-radius:;display:block;outline:none;text-decoration:none;width:100%;height:36px;" width="41" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/thumbs_up-03f5177f1f893e02539be68975ecedee8a72a713e5958ec1426838e4c6134afe.png" /></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
+</td><td style="vertical-align:middle;width:54px;">
+<![endif]--><div aria-labelledby="mj-column-per-20" class="mj-column-per-20 outlook-group-fix" style="vertical-align:middle;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:20%;"><table role="presentation" cellpadding="0" cellspacing="0" style="vertical-align:middle;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="left" border="0"><tbody><tr><td style="width:40px;"><img alt="" title="" height="36" style="border:none;border-radius:;display:block;outline:none;text-decoration:none;width:100%;height:36px;" width="40" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/thumbs_down-8066906ba0dc120bc3cc7fc13bc53bae975eb6392228cd016fe779b11d74137a.png" /></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><table role="presentation" cellpadding="0" cellspacing="0" style="background:#FAFAFB;font-size:0px;width:100%;" border="0"><tbody><tr><td><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:64px;padding-left:30px;padding-right:30px;padding-top:64px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:16px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:84px;">
+    <a style="text-decoration: none;" target="_blank" href="../index.html@utm_campaign=Issue&amp;utm_content=profileimage&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed+🤔💡🤯🤓.html">
+      <img alt="Jay Cuthrell" title="Jay Cuthrell" height="84px" width="84" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:84px;" src="https://s3.amazonaws.com/revue/profiles/images/000/021/457/small/IMG_2934.png?1653429860" />
+</a>  </td></tr></tbody></table></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:8px;" align="center"><div style="cursor:auto;color:#111111;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:20px;font-weight:700;line-height:24px;text-align:center;">
+      By <a style="color: #111111;" href="../index.html@utm_campaign=Issue&amp;utm_content=profilename&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed+🤔💡🤯🤓.html">Jay Cuthrell</a>
+    </div></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#3B424B;font-family:Georgia, 'Times New Roman', Times, serif;font-size:16px;line-height:28px;text-align:center;">
+        <p>Sometimes a song, always a topic (or two), a read, and a repo -- every Sunday!</p>
+    </div></td></tr>
+          <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:32px;" align="center"><div style="cursor:auto;color:#3B424B;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:16px;line-height:20px;text-align:center;">
+            <a target="_blank" style="color: #1DA1F2; text-decoration: none;" href="https://www.twitter.com/share?url=http://sunday.fudge.org/issues/fudge-sunday-get-high-on-a-new-thing-679408&amp;via=revue&amp;text=Fudge%20Sunday%20-%20Get%20High%20On%20a%20New%20Thing%20by%20%40JayCuthrell&amp;related=revue">
+              <img alt="" width="24" height="20" style="border:none;border-radius:0;outline:none;text-decoration:none;vertical-align:middle;padding-right:3px;" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/share_twitter_2-262b22d2e83e004337564ae39eb73e8b4e33aec8272cdb1a4344f245527ba9f1.png" />
+              <strong style="color: #1DA1F2;vertical-align:middle;">Tweet</strong>
+</a>               
+            <a target="_blank" style="color: #3B5998; text-decoration: none;" href="https://www.facebook.com/sharer/sharer.php?u=http://sunday.fudge.org/issues/fudge-sunday-get-high-on-a-new-thing-679408">
+              <img alt="" width="20" height="20" style="border:none;border-radius:0;outline:none;text-decoration:none;vertical-align:middle;padding-right:3px;" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/share_facebook_2-740e2a991dd10a03118488499eb93d67681b28653961bc7bff2e64ad798e3085.png" />
+              <strong style="color: #3B5998;vertical-align:middle;">Share</strong></a>
+</a>          </div></td></tr>
+
+        </tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div></td></tr></tbody></table><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:32px;padding-left:30px;padding-right:30px;padding-top:64px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#3B424B;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:14px;line-height:28px;text-align:center;">
+      In order to unsubscribe, click <a style="color: #06F" href="fudge-sunday-get-high-on-a-new-thing-679408.html#">here</a>.
+    </div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#3B424B;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:14px;line-height:28px;text-align:center;">
+      If you were forwarded this newsletter and you like it, you can subscribe <a target="_blank" style="color: #06F" href="../index.html@utm_campaign=Issue&amp;utm_content=forwarded&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed+🤔💡🤯🤓.html">here</a>.
+    </div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:8px;" align="center"><div style="cursor:auto;color:#3B424B;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:14px;line-height:28px;text-align:center;">
+      Powered by <a target="_parent" style="color: #06F" href="https://www.getrevue.co/?utm_source=Start the week more informed 🤔💡🤯🤓&amp;utm_medium=email&amp;utm_content=footerlink&amp;utm_campaign=Issue">Revue</a>
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:64px;padding-left:30px;padding-right:30px;"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#bbb;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;font-size:12px;line-height:20px;text-align:center;">
+      1903 Live Oak St #92 Beaufort, NC 28516-0092
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+  </div>
+</body>
+</html>
+</div>
+</div>
+</div>
+<div class='profile-layout-row'>
+<div class='profile-layout-columns'>
+<div class='profile-layout-column profile-layout-column--is-left'>
+<div class='component__profile-subscribe-form component__profile-subscribe-form--is-footer'>
+<h1 title='Start the week more informed 🤔💡🤯🤓'>Start the week more informed 🤔💡🤯🤓</h1>
+<style>
+  .component__profile-subscribe-form h1 { color: #000 }
+  .component__profile-subscribe-form .component__button { background-color: #000; border-color: #000 }
+  .component__profile-subscribe-form .component__button:hover { background-color: #000; border-color: #000 }
+  .component__form-input input[type=email] { outline-color: #000;}
+</style>
+<form class="new_member" id="XzkTjIJx_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="3tCPEb9pD097PsvvONRRJmhXcrgJae842BWb7I6VPMfoqoYl4p8ueQm8UiOBePTKB2N6CHf1EpoXf1e37xwGYg==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-footer" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='profile-form-fields-container'>
+<div class='component__form-input'>
+<input id="member_email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed 🤔💡🤯🤓" type="email" name="member[email]" />
+<p>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed 🤔💡🤯🤓 will receive your email address.</p>
+
+</div>
+<div class='component-form-input-submit'>
+<div class='component__button component__button--is-primary-block'>
+<script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='C86tB7w1/1Pb6EhIyGWqiw=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="oNPj6zsMCaptchaCallback" class="g-recaptcha " title="Subscribe to the newsletter of Start the week more informed 🤔💡🤯🤓" value="Subscribe now"/>
+
+
+</div>
+</div>
+
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_orXu9o" id="confirm_orXu9o" autocomplete="off" />
+</div>
+
+</form><script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+window["oNPj6zsMCaptchaCallback"] = function() {
+  document.getElementById("XzkTjIJx_new_member").submit();
+};
+
+// Show terms field after focus
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById("XzkTjIJx_new_member");
+    if (!form) {
+      return;
+    }
+
+    var termsParagraph = form.querySelector('.profile-form-fields-container p');
+    var emailField = form.querySelector('input[name="member[email]"');
+    if (emailField !== null && termsParagraph !== null) {
+      emailField.addEventListener('focus', function() {
+        termsParagraph.classList.add('visible');
+      });
+    }
+  });
+})();
+
+
+//]]>
+</script>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class='component__profile-footer'>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+<div class='footer-links-container'>
+<a target="_blank" href="https://www.getrevue.co/privacy/platform?locale=en&amp;ref=Revue+Profile">Privacy Policy</a>
+&
+<a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a>
+</div>
+</div>
+
+</div>
+<style>
+  .component__profile-subscribe-form--is-modal .modal-body a svg { color: #000; }
+</style>
+<div class='component__profile-subscribe-form component__profile-subscribe-form--is-modal'>
+<div class='modal align-left fade' id='profile-subscribe-modal-form'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-body'>
+<a class='component__profile-subscribe-form__close-button' data-dismiss='modal' href='fudge-sunday-get-high-on-a-new-thing-679408.html#'>
+<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="11.5" fill="none" /><path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M12 12.812L16.188 17l.812-.812L12.812 12 17 7.812 16.188 7 12 11.188 7.812 7 7 7.812 11.188 12 7 16.188l.812.812L12 12.812z" /></svg>
+
+</a>
+<h1 title='Start the week more informed 🤔💡🤯🤓'>Start the week more informed 🤔💡🤯🤓</h1>
+<style>
+  .component__profile-subscribe-form h1 { color: #000 }
+  .component__profile-subscribe-form .component__button { background-color: #000; border-color: #000 }
+  .component__profile-subscribe-form .component__button:hover { background-color: #000; border-color: #000 }
+  .component__form-input input[type=email] { outline-color: #000;}
+</style>
+<form class="new_member" id="2qgzXj7R_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xYxyCH0BS42GFxFgFtuw/IWWoMI9Cnag8D7YV/hQDx3z9ns8IPdqu/SViKyvdxUQ6qKockOWiwI/VBQMmdk1uA==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-modal" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='profile-form-fields-container'>
+<div class='component__form-input'>
+<input id="member_email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed 🤔💡🤯🤓" type="email" name="member[email]" />
+<p>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed 🤔💡🤯🤓 will receive your email address.</p>
+
+</div>
+<div class='component-form-input-submit'>
+<div class='component__button component__button--is-primary-block'>
+<script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='C86tB7w1/1Pb6EhIyGWqiw=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="9YCUXmmpCaptchaCallback" class="g-recaptcha " title="Subscribe to the newsletter of Start the week more informed 🤔💡🤯🤓" value="Subscribe now"/>
+
+
+</div>
+</div>
+
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_6KWRq1" id="confirm_6KWRq1" autocomplete="off" />
+</div>
+
+</form><script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+window["9YCUXmmpCaptchaCallback"] = function() {
+  document.getElementById("2qgzXj7R_new_member").submit();
+};
+
+// Show terms field after focus
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById("2qgzXj7R_new_member");
+    if (!form) {
+      return;
+    }
+
+    var termsParagraph = form.querySelector('.profile-form-fields-container p');
+    var emailField = form.querySelector('input[name="member[email]"');
+    if (emailField !== null && termsParagraph !== null) {
+      emailField.addEventListener('focus', function() {
+        termsParagraph.classList.add('visible');
+      });
+    }
+  });
+})();
+
+
+//]]>
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script nonce="C86tB7w1/1Pb6EhIyGWqiw==">
+//<![CDATA[
+mixpanel.register({'profile_page_new_design': true});
+mixpanel.track('Profile viewed', {
+  'profile' : "Start the week more informed 🤔💡🤯🤓",
+  'profile_id' : "21457",
+  'Last page': getReferrer()
+}, function() {
+  mixpanel.register({"First time": false});
+});
+
+
+//]]>
+</script>
+
+
+</body>
+</html>
