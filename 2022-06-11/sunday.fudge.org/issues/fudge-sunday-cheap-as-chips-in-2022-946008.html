@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title dir='ltr'>Fudge Sunday - Cheap as Chips in 2022 | Revue</title>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='Start the week more informed - This week we are looking ahead to Cheap as Chips in 2022!' name='description'>
+<meta content='newsletter, email, digest, curation' name='keywords'>
+<!--[if lt IE 9]>
+<script src="//d3jbm9h03wxzi9.cloudfront.net/assets/html5shiv-bb669dd537dfdfb80f5581532f95e3d93d4e161976d46f6a8ea5c49c57cafbc8.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="https://d3jbm9h03wxzi9.cloudfront.net/assets/application-4eeb1b015e3c86cc20dbdc72a26232e7574974f39c773bc496318055f4845771.css" nonce="05EHihny7PBKdHV/lsKXvA==" />
+<script src="https://d3jbm9h03wxzi9.cloudfront.net/assets/application-901c68fbeb648527956c564a7cd26e41a62f2936c423314ff981aae933cbd647.js" nonce="05EHihny7PBKdHV/lsKXvA==" defer="defer"></script>
+<script nonce="05EHihny7PBKdHV/lsKXvA==">
+//<![CDATA[
+document.addEventListener('DOMContentLoaded', function() {
+  I18n.defaultLocale = "en";
+  I18n.locale = "en";
+});
+
+
+
+//]]>
+</script><link href='https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-4bca5727fc21fa6ee2a6ae554a6c236825acdd046c481ffce5748911f8b1f4a3.ico' rel='icon' size='16x16'>
+<link href='https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-4bca5727fc21fa6ee2a6ae554a6c236825acdd046c481ffce5748911f8b1f4a3.ico' rel='icon' size='32x32'>
+<link color='#E15718' href='https://d3jbm9h03wxzi9.cloudfront.net/assets/icon-3ef15b89ab8676cd48dac6b7878bbc0e564d4e4167ea590f1f49d8e596d1ee4b.svg' rel='mask-icon'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="+g714tax2lLHkLt4IUpBmH5bhTOqT3HoAr0s9aqNypaxjEfz9+bwRlCksnzgvGzZM3aPcwNzeeDyC3EMyjBj7w==" />
+<meta name="csp-nonce" content="05EHihny7PBKdHV/lsKXvA==" />
+
+<script nonce="05EHihny7PBKdHV/lsKXvA==">
+//<![CDATA[
+  function getQueryParam(url, param) {
+    // Expects a raw URL
+    param = param.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + param + "=([^&#]*)",
+    regex = new RegExp( regexS ),
+    results = regex.exec(url);
+    if (results === null || (results && typeof(results[1]) !== 'string' && results[1].length)) {
+      return '';
+    } else {
+      return decodeURIComponent(results[1]).replace(/\+/g, ' ');
+    }
+  };
+
+  function geUtmParams() {
+    var campaign_keywords = 'utm_source utm_medium utm_campaign utm_content utm_term'.split(' ')
+    , kw = ''
+    , params = {}
+    , first_params = {}
+    , result = {};
+
+    var index;
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        params[campaign_keywords[index] + ' [last touch]'] = kw;
+      }
+    }
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        first_params[campaign_keywords[index]] = kw;
+      }
+    };
+
+    result.first_params = first_params;
+    result.params = params;
+
+    return result;
+  }
+
+  function extractReferrer(referrer) {
+    campaign = geUtmParams().first_params["utm_campaign"];
+    ref = getQueryParam(document.URL, 'ref');
+
+    if(!campaign && !ref) {
+      if (/www\.getrevue\.co\/profile\/(.*?)\/issue/.test(window.location.href)) {
+        return 'Revue Profile Issue'
+      } else if(/www\.getrevue\.co\/profile/.test(window.location.href)) {
+        return 'Revue Profile'
+      }
+    }
+
+    if(!!campaign) {
+      return campaign;
+    } else if (referrer.search('https?://(.*)google.([^/?]*)') === 0) {
+      return 'Google';
+    } else if (referrer.search('https?://(.*)bing.([^/?]*)') === 0) {
+      return 'Bing';
+    } else if (referrer.search('https?://(.*)yahoo.([^/?]*)') === 0) {
+      return 'Yahoo';
+    } else if (referrer.search('https?://(.*)facebook.([^/?]*)') === 0) {
+      return 'Facebook';
+    } else if (referrer.search('https?://(.*)twitter.([^/?]*)') === 0 || referrer.search('https?://(.*)t.co/') === 0) {
+      return 'Twitter';
+    } else if (referrer.search('https?://(.*)linkedin.([^/?]*)') === 0) {
+      return 'LinkedIn'
+    } else if (referrer == '$direct' || (!referrer || /^\s*$/.test(referrer))) {
+      return '$direct';
+    } else if (referrer.search('https?://(.*)getrevue.co') == 0) {
+      if(/\/app\//.test(referrer)) {
+        return 'Revue App';
+      } else if (/\/profile\/(.*?)\/issue/.test(referrer)) {
+        return 'Revue Profile Issue'
+      } else if (/\/profile\//.test(referrer)) {
+        return 'Revue Profile'
+      } else if (/blog\.getrevue\.co/.test(referrer)) {
+        return 'Revue Blog'
+      } else {
+        return 'Revue Page'
+      }
+    } else if (referrer.search('https?://(.*)rev.vu([^/?]*)') === 0) {
+      return 'Revue Item';
+    } else if (!!ref) {
+      return ref;
+    } else {
+      tld = new RegExp('\.(asn\.au|com\.au|net\.au|id\.au|org\.au|edu\.au|gov\.au|csiro\.au|act\.au|nsw\.au|nt\.au|qld\.au|sa\.au|tas\.au|vic\.au|wa\.au|co\.at|or\.at|priv\.at|ac\.at|avocat\.fr|aeroport\.fr|veterinaire\.fr|co\.hu|film\.hu|lakas\.hu|ingatlan\.hu|sport\.hu|hotel\.hu|ac\.il|co\.il|org\.il|net\.il|k12\.il|gov\.il|muni\.il|idf\.il|ac\.za|gov\.za|law\.za|mil\.za|nom\.za|school\.za|net\.za|co\.uk|org\.uk|me\.uk|ltd\.uk|plc\.uk|net\.uk|sch\.uk|ac\.uk|gov\.uk|mod\.uk|nhs\.uk|police\.uk)')
+      a = document.createElement('a');
+      a.href = referrer;
+      ref = a.hostname;
+      if(tld.test(ref)) {
+        return ref.replace(tld, '').split('.').pop()
+      } else {
+        return ref.split('.').reverse()[1];
+      }
+    }
+  };
+
+  function getReferrer() {
+    ref = document.referrer;
+    return extractReferrer(ref);
+  }
+
+  function mixpanelLoaded() {
+    try {
+      // Set ref
+      initial_ref = mixpanel.get_property('$initial_referrer');
+      mixpanel.register_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"$created": new Date().toISOString()});
+
+      // Set distinct id
+      var member_distinct_id_element = document.querySelector('#member_distinct_id');
+      member_distinct_id_element.value = mixpanel.get_distinct_id();
+    } catch(e) {}
+  };
+
+//]]>
+</script>
+<script nonce="05EHihny7PBKdHV/lsKXvA==">
+//<![CDATA[
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("2087bc32dd14049d6de8a339112517d9", {loaded: mixpanelLoaded, ip: false});
+//]]>
+</script>
+
+<script nonce="05EHihny7PBKdHV/lsKXvA==">
+//<![CDATA[
+  var utm = geUtmParams();
+  mixpanel.register(utm.params);
+
+//]]>
+</script>
+<link href="fudge-sunday-cheap-as-chips-in-2022-946008.html" rel='canonical'>
+
+<meta content='86400' property='twitter:maxage'>
+<meta content='21000' property='twitter:revue:account:id'>
+<meta content='Start the week more informed' property='twitter:newsletter:title'>
+<meta content='Sometimes a song, always a topic (or two), a read, and a repo -- every Sunday!' property='twitter:newsletter:description'>
+<meta content='http://sunday.fudge.org/?via=twitter-card' property='twitter:newsletter:profile:url'>
+<meta content='true' property='twitter:newsletter:issue:card'>
+<meta content='https://imgix.revue.co/profiles/images/000/021/457/original/IMG_2934.png?ixlib=rails-3.1.0' property='twitter:newsletter:image:src'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-cheap-as-chips-in-2022-946008?via=twitter-card' property='twitter:newsletter:sample:issue:url'>
+<meta content='Fudge Sunday - Cheap as Chips in 2022' property='twitter:issue:title'>
+<meta content='This week we are looking ahead to Cheap as Chips in 2022!' property='twitter:issue:description'>
+<meta content='44' property='twitter:issue:number'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-cheap-as-chips-in-2022-946008?via=twitter-card' property='twitter:issue:url'>
+<meta content='https://revue-direct.imgix.net/cache/6131f4974c8e6b53a8ebcc67be822777/f973f02786ee4e93548bcd2f1040b6d7.jpeg?ixlib=rails-3.1.0' property='twitter:issue:image:src'>
+<meta content='659013' property='twitter:user:id'>
+<meta content='summary_large_image' property='twitter:card'>
+<meta content='@JayCuthrell' property='twitter:site'>
+<meta content='1073732649320413' property='fb:app_id'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-cheap-as-chips-in-2022-946008' property='og:url'>
+<meta content='article' property='og:type'>
+<meta content='Fudge Sunday - Cheap as Chips in 2022' property='og:title'>
+<meta content='This week we are looking ahead to Cheap as Chips in 2022!' property='og:description'>
+<meta content='https://s3.amazonaws.com/revue/issue_images/images/000/400/253/original/issue_image_946008.jpg?1640572149' property='twitter:image'>
+<meta content='https://s3.amazonaws.com/revue/issue_images/images/000/400/253/original/issue_image_946008.jpg?1640572149' property='og:image'>
+<meta content='https://s3.amazonaws.com/revue/items/images/013/174/308/original/chart-cost-per-drive-2017.jpg?1640571813' property='og:image'>
+<meta content='https://s3.amazonaws.com/revue/items/images/013/174/305/original/Wikibon-SSD-less-than-HDD-in-2026.jpg?1640571767' property='og:image'>
+<meta content='https://s3.amazonaws.com/revue/profile_covers/images/000/000/668/original/Untitled_design.png?1649077741' property='og:image'>
+
+
+</head>
+<body class='profiles archive' data-page='ProfilesArchive'>
+<script nonce="05EHihny7PBKdHV/lsKXvA==">
+//<![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58968534-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+
+//]]>
+</script>
+<style>
+  #profile-nav {border-color: #000 !important;}
+  #profile-nav.expanded svg {fill: #000 !important;}
+  #nav-back {color: #000 !important;}
+  #nav-back:after {border-color: #000 !important;}
+  #profile-logo {background-color: #000 !important;}
+  .subscribe-form__submit {background-color: #000 !important;}
+  section#premium a {color: #06F !important;}
+  ::-moz-selection {background-color: #000 !important;}
+  ::selection {background-color: #000 !important;}
+</style>
+<div id='profile-nav'>
+<a id="nav-back" href="../index.html">View profile</a>
+<a id="profile-logo" href="https://www.getrevue.co/?ref=Revue+Profile"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+</a></div>
+
+<article id='issue-holder'>
+<form class="subscribe-form" id="wJJFhxzb_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="sRWKVTU5kgnz//CBYL3dzXLbXVNGpfmt9l6Bj7b+FoJ+S0b4maSe6+U+C8CvLaRIQzn9X+EXwvyJdu87ALohMg==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-header" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='subscribe-form__fields'>
+<div class='subscribe-form__copy'>
+<label class="subscribe-form__label" for="member_email">Subscribe to our newsletter</label>
+<label class='subscribe-form__sublabel'>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed will receive your email address.</label>
+</div>
+<div class='subscribe-form__input'>
+<div class='input-group'>
+<input class="form-control subscribe-form__email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed" type="email" name="member[email]" id="member_email" />
+<div class='input-group-btn'><script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='4AwQYSWqcWJDbxemz4diXg=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="yuOw8B39CaptchaCallback" class="g-recaptcha btn btn-primary subscribe-form__submit" title="Subscribe to the newsletter of Start the week more informed" value="Subscribe now"/>
+</div>
+</div>
+</div>
+</div>
+<div class='subscribe-form__error'>
+<span class='error-message'>
+
+
+</span>
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_x8ghKu" id="confirm_x8ghKu" autocomplete="off" />
+</div>
+
+</form><script nonce="4AwQYSWqcWJDbxemz4diXg==">
+//<![CDATA[
+mixpanel.register({'profile_page_new_design': false});
+mixpanel.track('Profile viewed', {
+  'profile' : "Start the week more informed",
+  'profile_id' : "21457",
+  'Last page': getReferrer()
+}, function() {
+  mixpanel.register({"First time": false});
+});
+
+
+
+//]]>
+</script><script nonce="4AwQYSWqcWJDbxemz4diXg==">
+//<![CDATA[
+window["yuOw8B39CaptchaCallback"] = function() {
+  document.getElementById("wJJFhxzb_new_member").submit();
+};
+
+
+//]]>
+</script>
+<section id='issue'>
+<section id='issue-display'>
+<header>
+<span class='issue-nr'></span>
+<time datetime='2021-12-26T21:29:29-05:00'>Dec 26, 2021</time>
+<h1 title='Start the week more informed - Fudge Sunday - Cheap as Chips in 2022'>Fudge Sunday - Cheap as Chips in 2022</h1>
+</header>
+<div id='issue-frame'><!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <title></title>
+  <!--[if !mso]><!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; padding: 0; margin: 0; margin-bottom: 0; }
+  .revue-p + .revue-p, .revue-p + .revue-blockquote {margin-top: 14px !important;}
+  .revue-p + .revue-h2, .revue-h2 + .revue-p, .revue-ul + .revue-h2, .revue-h2 + .revue-ul, .revue-ol + .revue-h2, .revue-h2 + .revue-ol  {margin-top: 14px !important;}
+  .revue-h2 {font-size:20px;line-height:28px;font-weight:700;padding-bottom:0px !important;}
+  [class*="revue-p"] + [class*="revue-p"], [class*="revue-p"] + [class*="revue-blockquote"] {margin-top: 14px !important;}
+  [class*="revue-p"] + [class*="revue-h2"] {margin-top: 14px !important;}
+</style>
+<!--[if !mso]><!-->
+<style type="text/css">
+  @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }
+</style>
+<!--<![endif]-->
+<!--[if mso]>
+<style type="text/css">
+  .revue-p,
+  .revue-h2,
+  .revue-ul,
+  .revue-ol,
+  .revue-blockquote {margin-bottom: 14px !important;}
+</style>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<!--[if lte mso 11]>
+<style type="text/css">
+  .outlook-group-fix {
+    width:100% !important;
+  }
+</style>
+<![endif]-->
+<style type="text/css">
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100 { width:100%!important; }
+    .mj-column-per-100 { width:100%!important; }
+    .mj-column-per-25 { width:25.9259259259%!important; }
+    .mj-column-per-74 { width:74.0740740741%!important; }
+    .mj-column-per-50 { width:50%!important; }
+    .mj-column-per-60 { width:60%!important; }
+    .mj-column-per-20 { width:20%!important; }
+  }
+
+  @media screen and (max-width:600px) {
+    .title-text{font-size:14px !important; line-height:20px !important;}
+    .title-image{width:44px !important;height:44px !important;}
+    .indented {padding-left: 8px !important; padding-right: 8px !important;}
+    .link-image {width: 112px !important;}
+    .header-text {font-size: 22px !important; line-height: 32px !important;}
+    .revue-h2 {font-size:18px !important; line-height: 24px !important;}
+    .introduction-subject {font-size: 24px !important; line-height: 24px !important;}
+    .introduction-spacer {padding: 30px 0 !important;}
+    .link-title {font-size: 18px !important; line-height: 24px !important;}
+    .text-default,
+    .link-description {font-size: 14px !important; line-height: 22px !important;}
+    .link-url {font-size: 13px !important;}
+    .text-small {font-size:12px !important;}
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div id="preheader" style="display:none;font-size:1px;color:#FFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">This week we are looking ahead to Cheap as Chips in 2022!&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;</div>
+
+    
+    
+    
+    
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;padding-top:34px;" class="indented"><div style="cursor:auto;color:#657786;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:12px;line-height:22px;text-align:center;font-weight:400;" class="text-small"><a target="_blank" style="color: #657786;text-decoration:underline;" href="https://sunday.fudge.org/issues/fudge-sunday-cheap-as-chips-in-2022-946008?utm_campaign=Issue&amp;utm_content=view_in_browser&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed">View online</a></div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+    
+    
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;padding-top:34px;padding-bottom:28px;" class="indented">
+<table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="vertical-align:top;direction:ltr;font-size:0px;padding:0px;">
+<img alt="Start the week more informed" title="" height="auto" src="../../s3.amazonaws.com/revue/profile_covers/images/000/000/668/cover/Untitled_design.png@1649077741" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="650">
+</td></tr></tbody></table>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+    
+
+    
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;">
+<table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented" colspan="2"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;" class="text-default"><div style="margin:0;" class="revue-p">This week we are looking ahead to Cheap as Chips in 2022!</div>
+
+  </div></td></tr>
+  <tr><td style="word-break:break-word;font-size:0px;padding:40px 0px;" class="introduction-spacer"><p style="font-size:1px;border-top:1px solid #E1E1E1;width:100%"></p><!--[if mso | IE]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:1px;margin:40px auto;border-top:1px solid #E1E1E1;width:100%;" width="30"><tr><td style="height:0;line-height:0;"> </td></tr></table><![endif]--></td></tr>
+  </tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr>
+</tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+    
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Getting Informed
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">You may recall that I use Twitter in an ephemeral way. I use Tweepy to <em>cleanup</em> after I get <a href="https://twitter.com/jaycuthrell?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">my ideas tweeted</a> that might survive being added in an issue of <a href="https://sunday.fudge.org?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">my newsletter</a> and then (maybe one day) on <a href="https://fudge.org?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">my blog</a>.</div><div style="margin:0;" class="revue-p">Sometimes I’m doing meta commentary on <a href="https://twitter.com/Techmeme?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">@Techmeme</a>. Sometimes my meta commentary gets picked up by <a href="https://twitter.com/TechmemeChatter?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">@TechmemeChatter</a> when linked to on <a href="https://www.google.com/search?q=jaycuthrell%20site%3Atechmeme.com&amp;utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">techmeme.com</a> from <a href="https://www.google.com/search?q=jaycuthrell%20site%3Atechmeme.com&amp;utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">@jaycuthrell</a> even back in the olden times of my original <a href="https://www.google.com/search?q=qthrul%20site%3Atechmeme.com&amp;utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">@qthrul</a> handle.</div><div style="margin:0;" class="revue-p">Recently, Techmeme linked to coverage of chipmaker spend reaching $152B which is a +30% Y/Y increase. So, I looked back to 2011 supply chain for hard disk drives (HDD) and contrast this to the supply chain stories around semiconductors. </div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:0px;line-height:0px;text-align:left;width:100%;"><!--[if mso | IE]>
+<table  role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:13px;line-height:22px;font-weight: 400;text-align:left;">
+          <!--[if mso]>
+          <table border="0" cellpadding="0" cellspacing="0" width="140" align="left" style="width:140px;"><tr><td style="padding:0 30px 30px 0;">
+          <![endif]-->
+          <a target="_blank" style="text-decoration: none;" href="https://www.techmeme.com/211219/p7?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a211219p7">
+            <img width="140" height="140" alt="The $152B spend..." align="left" style="padding-right: 30px; padding-bottom: 36px;border:none;border-radius:0;outline:none;text-decoration:none;" class="link-image" src="../../s3.amazonaws.com/revue/items/images/013/072/489/thumb/samsung-foundry-fab-semiconductor-678_575px.jpg@1639969648" />
+</a>          <!--[if mso]>
+          </td></tr></table>
+          <![endif]-->
+        <div>
+          <div class="link-title" style="padding-bottom: 4px;font-weight:700;font-family:Helvetica,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color: #000000;font-size:20px;line-height:28px;"><a target="_blank" style="color: #000000;text-decoration: none;" href="https://www.techmeme.com/211219/p7?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a211219p7">The $152B spend...</a></div>
+          <div class="serif small-text link-description" style="padding-bottom: 4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:16px;line-height:24px;color: #000000;"><div style="margin:0;" class="revue-p">If <a href="https://www.techmeme.com/211219/p7?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a211219p7" target="_blank" style="color:#06F;text-decoration:underline;">chipmakers are on track to spend $152B on semiconductor fabrication facilities and the means of production</a> it may mean we’re looking at 2017 era patterns. Arguably, we are very much on a path to being cheap as chips in 2022.</div>
+</div>
+          <div class="link-url" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:14px;line-height:24px;"><a target="_blank" style="color: #06F;text-decoration:none;font-weight:400;" href="https://www.techmeme.com/211219/p7?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a211219p7">www.techmeme.com</a></div>
+        </div>
+      </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">My thinking at the time of this Techmeme coverage revolved around the idea that a pattern from 2011 might mean big things for 2022.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:28px;padding-left:30px;padding-right:30px;" class="indented"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='left' style='padding: 0; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 0; font-size: 16px; color: #000;border-bottom: 1px solid #E0E4E8;' valign='top'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1472761084113215498"><img style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;max-width:100%;height:auto;" alt="" src="../../s3.amazonaws.com/revue/items/images/013/072/462/mail/FHBKcbZXEAY4JJp.jpg@1639969222" />
+</a></td>
+</tr>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1472761084113215498"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Jay Cuthrell" width="36" height="36" src="../../s3.amazonaws.com/revue/tweet_items/profile_images/000/201/308/thumb/5FaFLYEp_normal.png@1639969223" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/JayCuthrell/status/1472761084113215498">Jay Cuthrell</a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1472761084113215498">@JayCuthrell</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1472761084113215498"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>Flashback: In 2011, Thailand monsoon and rainfall flooding took lives, impacted lives, disrupted global manufacturing supply chains, and led to a year of hard disk drive shortages.<br><br>Now: Pandemic.<br><br>Soon: A "cheap as chips" future.📉<br><br>Images via @<a class="tweet-url username" href="https://twitter.com/BlocksandFiles" rel="nofollow" style="color: #06F;" target="_blank">BlocksandFiles</a> @<a class="tweet-url username" href="https://twitter.com/Wikibon" rel="nofollow" style="color: #06F;" target="_blank">Wikibon</a> @<a class="tweet-url username" href="https://twitter.com/backblaze" rel="nofollow" style="color: #06F;" target="_blank">backblaze</a> <a href="https://t.co/oL636IaPg1" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/oL636IaPg1</a> <a href="https://t.co/W3mmVNRya2" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/W3mmVNRya2</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1472761084113215498"> 9:49 PM - 19 Dec 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:650px;">
+    <img alt="Via @Backblaze via @BlocksAndFiles" title="Via @Backblaze via @BlocksAndFiles" height="auto" src="../../s3.amazonaws.com/revue/items/images/013/174/308/mail/chart-cost-per-drive-2017.jpg@1640571813" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="650">
+</td></tr></tbody></table></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:16px;" align="center"><div style="cursor:auto;color:#95989C;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight: 400;font-size:13px;line-height:21px;text-align:center;">Via @Backblaze via @BlocksAndFiles</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:650px;">
+    <img alt="Via @BlocksAndFiles via @Wikibon" title="Via @BlocksAndFiles via @Wikibon" height="auto" src="../../s3.amazonaws.com/revue/items/images/013/174/305/mail/Wikibon-SSD-less-than-HDD-in-2026.jpg@1640571767" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="650">
+</td></tr></tbody></table></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:16px;" align="center"><div style="cursor:auto;color:#95989C;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight: 400;font-size:13px;line-height:21px;text-align:center;">Via @BlocksAndFiles via @Wikibon</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:0px;line-height:0px;text-align:left;width:100%;"><!--[if mso | IE]>
+<table  role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:13px;line-height:22px;font-weight: 400;text-align:left;">
+          <!--[if mso]>
+          <table border="0" cellpadding="0" cellspacing="0" width="140" align="left" style="width:140px;"><tr><td style="padding:0 30px 30px 0;">
+          <![endif]-->
+          <a target="_blank" style="text-decoration: none;" href="https://twitter.com/magicsilicon/status/1471533764555669505?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">
+            <img width="140" height="140" alt="To put that in perspective..." align="left" style="padding-right: 30px; padding-bottom: 36px;border:none;border-radius:0;outline:none;text-decoration:none;" class="link-image" src="../../s3.amazonaws.com/revue/items/images/013/174/183/thumb/FGvwCWeVkAAg7Ls.jpg_large@1640570524" />
+</a>          <!--[if mso]>
+          </td></tr></table>
+          <![endif]-->
+        <div>
+          <div class="link-title" style="padding-bottom: 4px;font-weight:700;font-family:Helvetica,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color: #000000;font-size:20px;line-height:28px;"><a target="_blank" style="color: #000000;text-decoration: none;" href="https://twitter.com/magicsilicon/status/1471533764555669505?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">To put that in perspective...</a></div>
+          <div class="serif small-text link-description" style="padding-bottom: 4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:16px;line-height:24px;color: #000000;"><div style="margin:0;" class="revue-p">“Top 10 semiconductor foundries by market share” – <a href="https://twitter.com/magicsilicon/status/1471533764555669505?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">@magicsilicon</a>
+</div>
+</div>
+          <div class="link-url" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:14px;line-height:24px;"><a target="_blank" style="color: #06F;text-decoration:none;font-weight:400;" href="https://twitter.com/magicsilicon/status/1471533764555669505?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">twitter.com</a></div>
+        </div>
+      </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div>
+  <div class="link-title" style="padding-bottom: 4px;font-weight:700;font-family:Helvetica,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color: #000000;font-size:20px;line-height:28px;"><a target="_blank" style="color: #000000;text-decoration: none;" href="https://sunday.fudge.org/issues/fudge-sunday-three-recommendations-walk-into-a-bar-847670?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">As I was saying previously...</a></div>
+  <div class="serif small-text link-description" style="padding-bottom: 4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:16px;line-height:24px;color: #000000;"><div style="margin:0;" class="revue-p">Be sure to check out my past coverage and shared trends of the semiconductors industry in <a href="https://sunday.fudge.org/issues/fudge-sunday-three-recommendations-walk-into-a-bar-847670?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Three recommendations walk into a bar BONUS section</a> as well as <a href="https://sunday.fudge.org/issues/fudge-sunday-and-all-points-in-between-679406?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">And All Points In Between</a> then <a href="https://sunday.fudge.org/issues/fudge-sunday-betting-odds-and-ends-justify-the-means-of-production-752134?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Betting Odds and Ends Justify the Means of Production</a>. </div>
+</div>
+  <div class="link-url" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:14px;line-height:24px;"><a target="_blank" style="color: #06F;text-decoration:none;font-weight:400;" href="https://sunday.fudge.org/issues/fudge-sunday-three-recommendations-walk-into-a-bar-847670?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">sunday.fudge.org</a></div>
+</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Addendum (Reader Feedback)
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">Thanks for the rapid feedback from <a href="https://gregmeyer.com?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Greg Meyer</a> on my reasoning above. </div><div style="margin:0;" class="revue-p">Here’s how I answered Greg’s questions on my reasons:</div><div style="margin:0;" class="revue-p"><em>I see a few patterns in our modern demands…</em></div><ol class="revue-ol">
+<li style="margin:0;"><em>Chips are going into everything that has a physical void to fill</em></li>
+<li style="margin:0;"><em>Smart(er) devices is impacting wider numbers of supply chains</em></li>
+<li style="margin:0;"><em>Chips with radios that can access multiple networking standards are increasingly common</em></li>
+</ol><div style="margin:0;" class="revue-p"><em>I see a few historical patterns as well…</em></div><ol class="revue-ol">
+<li style="margin:0;">
+<em>“Chip Dumping” and past press coverage of the 1980s i.e. </em><a href="https://www.nytimes.com/1986/04/25/business/us-reaffirms-japan-chip-dumping.html%22?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;"><em><a href="https://www.nytimes.com/1986/04/25/business/us-reaffirms-japan-chip-dumping.html?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" style="color:#06F;text-decoration:underline;" target="_blank">https://www.nytimes.com/1986/04/25/business/us-reaffirms-japan-chip-dumping.html</a></em></a>
+</li>
+<li style="margin:0;">
+<em>“Copy Exactly” approaches becoming standardized across industry of the 1990s i.e. </em><a href="https://en.wikichip.org/wiki/intel/copy_exactly!%22?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;"><em><a href="https://en.wikichip.org/wiki/intel/copy_exactly?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" style="color:#06F;text-decoration:underline;" target="_blank">https://en.wikichip.org/wiki/intel/copy_exactly</a>!</em></a>
+</li>
+<li style="margin:0;">
+<em>“Tick Tock” becoming an ingrained culture of expectation for technology refreshes in the 2000s i.e. </em><a href="https://www.extremetech.com/computing/127987-deliberate-excellence-why-intel-leads-the-world-in-semiconductor-manufacturing/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;"><em><a href="https://www.extremetech.com/computing/127987-deliberate-excellence-why-intel-leads-the-world-in-semiconductor-manufacturing/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" style="color:#06F;text-decoration:underline;" target="_blank">https://www.extremetech.com/computing/127987-deliberate-excellence-why-intel-leads-the-world-in-semiconductor-manufacturing/</a></em></a>
+</li>
+</ol>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Work Plug!
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">As a reminder, I work at <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Faction</a>. What’s <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Faction</a> you ask?🤔🤔🤔🤔</div><div style="margin:0;" class="revue-p">
+<a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Faction</a> provides clientele with cloud data services across <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">hyperscale providers</a> to maximize innovation and <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">multicloud</a> outcomes.🤓☁️📊🚀</div><div style="margin:0;" class="revue-p">
+<a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">We’re hiring</a> at Faction!🎉🤓☁️🚀</div><div style="margin:0;" class="revue-p">To see our current openings <a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">click here</a>.⬅️🤓☁️🚀</div><div style="margin:0;" class="revue-p">In fact, <a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">there are at least a dozen openings</a> as of this issue!⓬🤓☁️🚀</div><div style="margin:0;" class="revue-p">⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️</div><ol class="revue-ol">
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Executive Assistant / Chief of Staff</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Vice President, Marketing</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Solutions Delivery Manager</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Cloud Data Services Leader</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Product Manager, Alliances &amp; OEM (Cloud Technology)</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Alliance Business Development Manager (Cloud Technology)</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Enterprise Sales Executive (Cloud Technology)</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Sales Executive</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Product Development Engineer</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Senior Back-End Engineer</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Senior DevOps Engineer</a></li>
+<li style="margin:0;"><a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Senior Infrastructure Engineer (Cloud)</a></li>
+</ol><div style="margin:0;" class="revue-p">⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️</div><div style="margin:0;" class="revue-p">
+<a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">See a fit for you or someone in your network</a>?✅🤓☁️🚀</div><div style="margin:0;" class="revue-p">Please don’t hesitate to <a href="https://jaycuthrell.com/contact/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">reach out to me</a>.☎️🤓☁️🚀</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Disclosure
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">I am linking to my <a href="https://jaycuthrell.com/disclosure/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">disclosure</a>.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+    
+
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="left" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0 20px; max-width:650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="left" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:40px;padding-bottom:40px;" align="center" colspan="2"><div style="cursor:auto;background-color:#e1e1e1;height:1px;width:100%;"></div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center" colspan="2"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:14px;text-align:center;font-weight:400;">Did you enjoy this issue? <a target="_blank" style="text-decoration:underline;color:#6F7379" href="fudge-sunday-cheap-as-chips-in-2022-946008.html#">Yes</a> <a target="_blank" style="text-decoration:underline;color:#6F7379" href="fudge-sunday-cheap-as-chips-in-2022-946008.html#">No</a></div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:40px;padding-bottom:40px;" align="center" colspan="2"><div style="cursor:auto;background-color:#e1e1e1;height:1px;width:100%;"></div></td></tr>
+    <tr>
+    <td style="word-break:break-word;font-size:0px;padding:0px;" align="left" width="76" valign="top">
+      <a style="text-decoration: none;" target="_blank" href="https://sunday.fudge.org/?utm_campaign=Issue&amp;utm_content=profileimage&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed">
+        <img alt="Jay Cuthrell" title="Jay Cuthrell" height="56" width="56" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:56px;height:56px;" src="../../s3.amazonaws.com/revue/profiles/images/000/021/457/small/IMG_2934.png@1653429860" />
+</a>    </td>
+    <td style="word-break:break-word;font-size:0px;padding:0px;" align="left">
+
+    <div style="cursor:auto;color:#333333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height:16px;text-align:left;font-weight:400;padding-bottom: 8px;">
+      <span style="font-weight:700;">Jay Cuthrell</span> <a style="color: #657786;text-decoration:none;" href="https://twitter.com/JayCuthrell">@JayCuthrell</a>
+      </div>
+    <div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">
+      <p>Sometimes a song, always a topic (or two), a read, and a repo -- every Sunday!</p>
+    </div></td></tr>
+  </tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+    
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="left" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0 20px; max-width:650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="left" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:32px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:40px;padding-top:40px;" align="center"><div style="cursor:auto;background-color:#e1e1e1;height:1px;width:100%;"></div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">In order to unsubscribe, click <a style="color: #6F7379; text-decoration:underline;" href="fudge-sunday-cheap-as-chips-in-2022-946008.html#">here</a>.</div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">If you were forwarded this newsletter and you like it, you can subscribe <a target="_blank" style="color: #6F7379; text-decoration:underline;" href="https://sunday.fudge.org/?utm_campaign=Issue&amp;utm_content=forwarded&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed">here</a>.</div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:12px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">Created with <a target="_parent" style="color: #6F7379; text-decoration:underline;" href="https://www.getrevue.co/?utm_source=Start the week more informed&amp;utm_medium=email&amp;utm_content=footerlink&amp;utm_campaign=Issue">Revue by Twitter</a>.</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="left" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="left" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:64px;padding-left:30px;padding-right:30px;"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;"><![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:20px;text-align:left;">1903 Live Oak St #92 Beaufort, NC 28516-0092</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+  </div>
+</body>
+</html></div>
+</section>
+<section id='issue-share'>
+<span class='share'>Share</span>
+<a class="twitter" target="_blank" href="https://www.twitter.com/share?url=http://sunday.fudge.org/issues/fudge-sunday-cheap-as-chips-in-2022-946008&amp;via=revue&amp;text=Fudge%20Sunday%20-%20Cheap%20as%20Chips%20in%202022%20by%20%40JayCuthrell&amp;related=revue"><span class='icon-twitter'></span>
+<span class='name'>Share to Twitter</span>
+</a><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://sunday.fudge.org/issues/fudge-sunday-cheap-as-chips-in-2022-946008"><span class='icon-facebook'></span>
+<span class='name'>Share to Facebook</span>
+</a></section>
+</section>
+<form class="subscribe-form" id="EGBhX0N7_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="z6NjDH7QCUH4t9KI/PgGEcqtxmyeFLdn5kiMwSDCFBAA/a+h0k0Fo+52KckzaH+U+09mYDmmjDaZYOJ1loYjoA==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-footer" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='subscribe-form__fields'>
+<div class='subscribe-form__copy'>
+<label class="subscribe-form__label" for="member_email">Subscribe to our newsletter</label>
+<label class='subscribe-form__sublabel'>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed will receive your email address.</label>
+</div>
+<div class='subscribe-form__input'>
+<div class='input-group'>
+<input class="form-control subscribe-form__email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed" type="email" name="member[email]" id="member_email" />
+<div class='input-group-btn'><script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='4AwQYSWqcWJDbxemz4diXg=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="adB32fqYCaptchaCallback" class="g-recaptcha btn btn-primary subscribe-form__submit" title="Subscribe to the newsletter of Start the week more informed" value="Subscribe now"/>
+</div>
+</div>
+</div>
+</div>
+<div class='subscribe-form__error'>
+<span class='error-message'>
+
+
+</span>
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_QuAIQy" id="confirm_QuAIQy" autocomplete="off" />
+</div>
+
+</form><script nonce="4AwQYSWqcWJDbxemz4diXg==">
+//<![CDATA[
+window["adB32fqYCaptchaCallback"] = function() {
+  document.getElementById("EGBhX0N7_new_member").submit();
+};
+
+
+//]]>
+</script>
+</article>
+<div class='container'>
+<footer class='terms'>
+<div class='footer-privacy'>
+<a target="_blank" href="https://www.getrevue.co/privacy/platform?locale=en&amp;ref=Revue+Profile">Privacy Policy</a>
+<br>
+<a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a>
+</div>
+<div class='footer-custom'>
+</div>
+<div class='footer-powered'>
+<a target="_blank" href="https://www.getrevue.co/?ref=Revue+Profile"><span>Powered by</span>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+</a></div>
+</footer>
+</div>
+
+<section id='subscribe-bar'>
+<div id='subscribe-bar-form'><form class="subscribe-form subscribe-form--inline" id="yLETfuTo_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Z5Mpl3u10ej7zkit3jyKGYjQB0bOD38Svx5vcXGsF/qozeU61yjdCu0Ps+wRrPOcuTKnSmm9REPANgHFx+ggSg==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-popup" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='subscribe-form__fields'>
+<div class='subscribe-form__copy'>
+<label class="subscribe-form__label" for="member_email">Subscribe to our newsletter</label>
+<label class='subscribe-form__sublabel'>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed will receive your email address.</label>
+</div>
+<div class='subscribe-form__input'>
+<div class='input-group'>
+<input class="form-control subscribe-form__email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed" type="email" name="member[email]" id="member_email" />
+<div class='input-group-btn'><script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='4AwQYSWqcWJDbxemz4diXg=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="opxQAVi7CaptchaCallback" class="g-recaptcha btn btn-primary subscribe-form__submit" title="Subscribe to the newsletter of Start the week more informed" value="Subscribe now"/>
+</div>
+</div>
+</div>
+</div>
+<div class='subscribe-form__error'>
+<span class='error-message'>
+
+
+</span>
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_cgsAlv" id="confirm_cgsAlv" autocomplete="off" />
+</div>
+
+</form><script nonce="4AwQYSWqcWJDbxemz4diXg==">
+//<![CDATA[
+window["opxQAVi7CaptchaCallback"] = function() {
+  document.getElementById("yLETfuTo_new_member").submit();
+};
+
+
+//]]>
+</script></div>
+</section>
+<div class='component__spacer--is-small'></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title dir='ltr'>Fudge Sunday - Cloud in Public: Impact Mapping | Revue</title>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='Start the week more informed - This week we continue to take a look at public things for a public cloud.☁️✅⚠️🛑This issue is part 5 of a 5 part seriesFudge Sunday' name='description'>
+<meta content='newsletter, email, digest, curation' name='keywords'>
+<!--[if lt IE 9]>
+<script src="//d3jbm9h03wxzi9.cloudfront.net/assets/html5shiv-bb669dd537dfdfb80f5581532f95e3d93d4e161976d46f6a8ea5c49c57cafbc8.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="https://d3jbm9h03wxzi9.cloudfront.net/assets/application-4eeb1b015e3c86cc20dbdc72a26232e7574974f39c773bc496318055f4845771.css" nonce="S/GoOnYS0zpypdMMTF2dMg==" />
+<script src="https://d3jbm9h03wxzi9.cloudfront.net/assets/application-901c68fbeb648527956c564a7cd26e41a62f2936c423314ff981aae933cbd647.js" nonce="S/GoOnYS0zpypdMMTF2dMg==" defer="defer"></script>
+<script nonce="S/GoOnYS0zpypdMMTF2dMg==">
+//<![CDATA[
+document.addEventListener('DOMContentLoaded', function() {
+  I18n.defaultLocale = "en";
+  I18n.locale = "en";
+});
+
+
+
+//]]>
+</script><link href='https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-4bca5727fc21fa6ee2a6ae554a6c236825acdd046c481ffce5748911f8b1f4a3.ico' rel='icon' size='16x16'>
+<link href='https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-4bca5727fc21fa6ee2a6ae554a6c236825acdd046c481ffce5748911f8b1f4a3.ico' rel='icon' size='32x32'>
+<link color='#E15718' href='https://d3jbm9h03wxzi9.cloudfront.net/assets/icon-3ef15b89ab8676cd48dac6b7878bbc0e564d4e4167ea590f1f49d8e596d1ee4b.svg' rel='mask-icon'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="u9GaPho6ogj6Ik84IMCm4q7tTZU0fnGcMw3cUYld2Z3wUygvO22IHG0WRjzhNouj48BH1Z1CeZTDu4Go6eBw5A==" />
+<meta name="csp-nonce" content="S/GoOnYS0zpypdMMTF2dMg==" />
+
+<script nonce="S/GoOnYS0zpypdMMTF2dMg==">
+//<![CDATA[
+  function getQueryParam(url, param) {
+    // Expects a raw URL
+    param = param.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + param + "=([^&#]*)",
+    regex = new RegExp( regexS ),
+    results = regex.exec(url);
+    if (results === null || (results && typeof(results[1]) !== 'string' && results[1].length)) {
+      return '';
+    } else {
+      return decodeURIComponent(results[1]).replace(/\+/g, ' ');
+    }
+  };
+
+  function geUtmParams() {
+    var campaign_keywords = 'utm_source utm_medium utm_campaign utm_content utm_term'.split(' ')
+    , kw = ''
+    , params = {}
+    , first_params = {}
+    , result = {};
+
+    var index;
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        params[campaign_keywords[index] + ' [last touch]'] = kw;
+      }
+    }
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        first_params[campaign_keywords[index]] = kw;
+      }
+    };
+
+    result.first_params = first_params;
+    result.params = params;
+
+    return result;
+  }
+
+  function extractReferrer(referrer) {
+    campaign = geUtmParams().first_params["utm_campaign"];
+    ref = getQueryParam(document.URL, 'ref');
+
+    if(!campaign && !ref) {
+      if (/www\.getrevue\.co\/profile\/(.*?)\/issue/.test(window.location.href)) {
+        return 'Revue Profile Issue'
+      } else if(/www\.getrevue\.co\/profile/.test(window.location.href)) {
+        return 'Revue Profile'
+      }
+    }
+
+    if(!!campaign) {
+      return campaign;
+    } else if (referrer.search('https?://(.*)google.([^/?]*)') === 0) {
+      return 'Google';
+    } else if (referrer.search('https?://(.*)bing.([^/?]*)') === 0) {
+      return 'Bing';
+    } else if (referrer.search('https?://(.*)yahoo.([^/?]*)') === 0) {
+      return 'Yahoo';
+    } else if (referrer.search('https?://(.*)facebook.([^/?]*)') === 0) {
+      return 'Facebook';
+    } else if (referrer.search('https?://(.*)twitter.([^/?]*)') === 0 || referrer.search('https?://(.*)t.co/') === 0) {
+      return 'Twitter';
+    } else if (referrer.search('https?://(.*)linkedin.([^/?]*)') === 0) {
+      return 'LinkedIn'
+    } else if (referrer == '$direct' || (!referrer || /^\s*$/.test(referrer))) {
+      return '$direct';
+    } else if (referrer.search('https?://(.*)getrevue.co') == 0) {
+      if(/\/app\//.test(referrer)) {
+        return 'Revue App';
+      } else if (/\/profile\/(.*?)\/issue/.test(referrer)) {
+        return 'Revue Profile Issue'
+      } else if (/\/profile\//.test(referrer)) {
+        return 'Revue Profile'
+      } else if (/blog\.getrevue\.co/.test(referrer)) {
+        return 'Revue Blog'
+      } else {
+        return 'Revue Page'
+      }
+    } else if (referrer.search('https?://(.*)rev.vu([^/?]*)') === 0) {
+      return 'Revue Item';
+    } else if (!!ref) {
+      return ref;
+    } else {
+      tld = new RegExp('\.(asn\.au|com\.au|net\.au|id\.au|org\.au|edu\.au|gov\.au|csiro\.au|act\.au|nsw\.au|nt\.au|qld\.au|sa\.au|tas\.au|vic\.au|wa\.au|co\.at|or\.at|priv\.at|ac\.at|avocat\.fr|aeroport\.fr|veterinaire\.fr|co\.hu|film\.hu|lakas\.hu|ingatlan\.hu|sport\.hu|hotel\.hu|ac\.il|co\.il|org\.il|net\.il|k12\.il|gov\.il|muni\.il|idf\.il|ac\.za|gov\.za|law\.za|mil\.za|nom\.za|school\.za|net\.za|co\.uk|org\.uk|me\.uk|ltd\.uk|plc\.uk|net\.uk|sch\.uk|ac\.uk|gov\.uk|mod\.uk|nhs\.uk|police\.uk)')
+      a = document.createElement('a');
+      a.href = referrer;
+      ref = a.hostname;
+      if(tld.test(ref)) {
+        return ref.replace(tld, '').split('.').pop()
+      } else {
+        return ref.split('.').reverse()[1];
+      }
+    }
+  };
+
+  function getReferrer() {
+    ref = document.referrer;
+    return extractReferrer(ref);
+  }
+
+  function mixpanelLoaded() {
+    try {
+      // Set ref
+      initial_ref = mixpanel.get_property('$initial_referrer');
+      mixpanel.register_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"$created": new Date().toISOString()});
+
+      // Set distinct id
+      var member_distinct_id_element = document.querySelector('#member_distinct_id');
+      member_distinct_id_element.value = mixpanel.get_distinct_id();
+    } catch(e) {}
+  };
+
+//]]>
+</script>
+<script nonce="S/GoOnYS0zpypdMMTF2dMg==">
+//<![CDATA[
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("2087bc32dd14049d6de8a339112517d9", {loaded: mixpanelLoaded, ip: false});
+//]]>
+</script>
+
+<script nonce="S/GoOnYS0zpypdMMTF2dMg==">
+//<![CDATA[
+  var utm = geUtmParams();
+  mixpanel.register(utm.params);
+
+//]]>
+</script>
+<link href="fudge-sunday-cloud-in-public-impact-mapping-826383.html" rel='canonical'>
+
+<meta content='86400' property='twitter:maxage'>
+<meta content='21000' property='twitter:revue:account:id'>
+<meta content='Start the week more informed' property='twitter:newsletter:title'>
+<meta content='Sometimes a song, always a topic (or two), a read, and a repo -- every Sunday!' property='twitter:newsletter:description'>
+<meta content='http://sunday.fudge.org/?via=twitter-card' property='twitter:newsletter:profile:url'>
+<meta content='true' property='twitter:newsletter:issue:card'>
+<meta content='https://imgix.revue.co/profiles/images/000/021/457/original/IMG_2934.png?ixlib=rails-3.1.0' property='twitter:newsletter:image:src'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-impact-mapping-826383?via=twitter-card' property='twitter:newsletter:sample:issue:url'>
+<meta content='Fudge Sunday - Cloud in Public: Impact Mapping' property='twitter:issue:title'>
+<meta content='This week we continue to take a look at public things for a public cloud. ☁️✅⚠️🛑 This issue is part 5 of a 5 part series, Cloud in Public: Impact Mapping' property='twitter:issue:description'>
+<meta content='36' property='twitter:issue:number'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-impact-mapping-826383?via=twitter-card' property='twitter:issue:url'>
+<meta content='https://revue-direct.imgix.net/cache/34e471f19e8f14e1a9479e7001f13335/8ccbe8297792b50d45d60fdf5c2d873c.png?ixlib=rails-3.1.0' property='twitter:issue:image:src'>
+<meta content='659013' property='twitter:user:id'>
+<meta content='summary_large_image' property='twitter:card'>
+<meta content='@JayCuthrell' property='twitter:site'>
+<meta content='1073732649320413' property='fb:app_id'>
+<meta content='http://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-impact-mapping-826383' property='og:url'>
+<meta content='article' property='og:type'>
+<meta content='Fudge Sunday - Cloud in Public: Impact Mapping' property='og:title'>
+<meta content='This week we continue to take a look at public things for a public cloud. ☁️✅⚠️🛑 This issue is part 5 of a 5 part series, Cloud in Public: Impact Mapping' property='og:description'>
+<meta content='https://s3.amazonaws.com/revue/issue_images/images/000/352/732/original/issue_image_826383.jpg?1635724697' property='twitter:image'>
+<meta content='https://s3.amazonaws.com/revue/issue_images/images/000/352/732/original/issue_image_826383.jpg?1635724697' property='og:image'>
+<meta content='https://s3.amazonaws.com/revue/profile_covers/images/000/000/668/original/Untitled_design.png?1649077741' property='og:image'>
+
+
+</head>
+<body class='profiles archive' data-page='ProfilesArchive'>
+<script nonce="S/GoOnYS0zpypdMMTF2dMg==">
+//<![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58968534-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+
+//]]>
+</script>
+<style>
+  #profile-nav {border-color: #000 !important;}
+  #profile-nav.expanded svg {fill: #000 !important;}
+  #nav-back {color: #000 !important;}
+  #nav-back:after {border-color: #000 !important;}
+  #profile-logo {background-color: #000 !important;}
+  .subscribe-form__submit {background-color: #000 !important;}
+  section#premium a {color: #06F !important;}
+  ::-moz-selection {background-color: #000 !important;}
+  ::selection {background-color: #000 !important;}
+</style>
+<div id='profile-nav'>
+<a id="nav-back" href="../index.html">View profile</a>
+<a id="profile-logo" href="https://www.getrevue.co/?ref=Revue+Profile"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+</a></div>
+
+<article id='issue-holder'>
+<form class="subscribe-form" id="6UagXmlk_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="hyiE14kguvZFIV1YTmx5QQkZZv8tvdM7gkagG6pfUTzq78s0igFIrlTsCe4b0YIeNhujpQ1HmRpEpv5AJdk+7g==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-header" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='subscribe-form__fields'>
+<div class='subscribe-form__copy'>
+<label class="subscribe-form__label" for="member_email">Subscribe to our newsletter</label>
+<label class='subscribe-form__sublabel'>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed will receive your email address.</label>
+</div>
+<div class='subscribe-form__input'>
+<div class='input-group'>
+<input class="form-control subscribe-form__email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed" type="email" name="member[email]" id="member_email" />
+<div class='input-group-btn'><script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='sCs7FcMXfub8uMO9J2ZYew=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="8ehvzD2CCaptchaCallback" class="g-recaptcha btn btn-primary subscribe-form__submit" title="Subscribe to the newsletter of Start the week more informed" value="Subscribe now"/>
+</div>
+</div>
+</div>
+</div>
+<div class='subscribe-form__error'>
+<span class='error-message'>
+
+
+</span>
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_IR4BtS" id="confirm_IR4BtS" autocomplete="off" />
+</div>
+
+</form><script nonce="sCs7FcMXfub8uMO9J2ZYew==">
+//<![CDATA[
+mixpanel.register({'profile_page_new_design': false});
+mixpanel.track('Profile viewed', {
+  'profile' : "Start the week more informed",
+  'profile_id' : "21457",
+  'Last page': getReferrer()
+}, function() {
+  mixpanel.register({"First time": false});
+});
+
+
+
+//]]>
+</script><script nonce="sCs7FcMXfub8uMO9J2ZYew==">
+//<![CDATA[
+window["8ehvzD2CCaptchaCallback"] = function() {
+  document.getElementById("6UagXmlk_new_member").submit();
+};
+
+
+//]]>
+</script>
+<section id='issue'>
+<section id='issue-display'>
+<header>
+<span class='issue-nr'></span>
+<time datetime='2021-10-31T20:00:00-04:00'>Oct 31, 2021</time>
+<h1 title='Start the week more informed - Fudge Sunday - Cloud in Public: Impact Mapping'>Fudge Sunday - Cloud in Public: Impact Mapping</h1>
+</header>
+<div id='issue-frame'><!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <title></title>
+  <!--[if !mso]><!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; padding: 0; margin: 0; margin-bottom: 0; }
+  .revue-p + .revue-p, .revue-p + .revue-blockquote {margin-top: 14px !important;}
+  .revue-p + .revue-h2, .revue-h2 + .revue-p, .revue-ul + .revue-h2, .revue-h2 + .revue-ul, .revue-ol + .revue-h2, .revue-h2 + .revue-ol  {margin-top: 14px !important;}
+  .revue-h2 {font-size:20px;line-height:28px;font-weight:700;padding-bottom:0px !important;}
+  [class*="revue-p"] + [class*="revue-p"], [class*="revue-p"] + [class*="revue-blockquote"] {margin-top: 14px !important;}
+  [class*="revue-p"] + [class*="revue-h2"] {margin-top: 14px !important;}
+</style>
+<!--[if !mso]><!-->
+<style type="text/css">
+  @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }
+</style>
+<!--<![endif]-->
+<!--[if mso]>
+<style type="text/css">
+  .revue-p,
+  .revue-h2,
+  .revue-ul,
+  .revue-ol,
+  .revue-blockquote {margin-bottom: 14px !important;}
+</style>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<!--[if lte mso 11]>
+<style type="text/css">
+  .outlook-group-fix {
+    width:100% !important;
+  }
+</style>
+<![endif]-->
+<style type="text/css">
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100 { width:100%!important; }
+    .mj-column-per-100 { width:100%!important; }
+    .mj-column-per-25 { width:25.9259259259%!important; }
+    .mj-column-per-74 { width:74.0740740741%!important; }
+    .mj-column-per-50 { width:50%!important; }
+    .mj-column-per-60 { width:60%!important; }
+    .mj-column-per-20 { width:20%!important; }
+  }
+
+  @media screen and (max-width:600px) {
+    .title-text{font-size:14px !important; line-height:20px !important;}
+    .title-image{width:44px !important;height:44px !important;}
+    .indented {padding-left: 8px !important; padding-right: 8px !important;}
+    .link-image {width: 112px !important;}
+    .header-text {font-size: 22px !important; line-height: 32px !important;}
+    .revue-h2 {font-size:18px !important; line-height: 24px !important;}
+    .introduction-subject {font-size: 24px !important; line-height: 24px !important;}
+    .introduction-spacer {padding: 30px 0 !important;}
+    .link-title {font-size: 18px !important; line-height: 24px !important;}
+    .text-default,
+    .link-description {font-size: 14px !important; line-height: 22px !important;}
+    .link-url {font-size: 13px !important;}
+    .text-small {font-size:12px !important;}
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div id="preheader" style="display:none;font-size:1px;color:#FFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">This week we continue to take a look at public things for a public cloud. ☁️✅⚠️🛑 This issue is part 5 of a 5 part series, Cloud in Public: Impact Mapping&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;<wbr>&nbsp;&zwnj;</div>
+
+    
+    
+    
+    
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;padding-top:34px;" class="indented"><div style="cursor:auto;color:#657786;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:12px;line-height:22px;text-align:center;font-weight:400;" class="text-small"><a target="_blank" style="color: #657786;text-decoration:underline;" href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-impact-mapping-826383?utm_campaign=Issue&amp;utm_content=view_in_browser&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed">View online</a></div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+    
+    
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;padding-top:34px;padding-bottom:28px;" class="indented">
+<table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="vertical-align:top;direction:ltr;font-size:0px;padding:0px;">
+<img alt="Start the week more informed" title="" height="auto" src="../../s3.amazonaws.com/revue/profile_covers/images/000/000/668/cover/Untitled_design.png@1649077741" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="650">
+</td></tr></tbody></table>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+    
+
+    
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;">
+<table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented" colspan="2"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;" class="text-default"><div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">This week we continue to take a look at public things for a public cloud.</div><div style="margin:0;" class="revue-p">☁️✅⚠️🛑</div><div style="margin:0;" class="revue-p">This issue is part 5 of a 5 part series</div><ol class="revue-ol">
+<li style="margin:0;"><a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-status-dashboards-783150?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Fudge Sunday - Cloud in Public: Status Dashboards</a></li>
+<li style="margin:0;"><a href="https://sunday.fudge.org/archive/794553?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Fudge Sunday - Cloud in Public: Engineering SLO</a></li>
+<li style="margin:0;"><a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-devcommsops-805563?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Fudge Sunday - Cloud in Public: DevCommsOps</a></li>
+<li style="margin:0;"><a href="https://sunday.fudge.org/archive/815545?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Fudge Sunday - Cloud in Public: Mean Time To RCA</a></li>
+<li style="margin:0;"><a href="https://sunday.fudge.org/archive/826383?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Fudge Sunday - Cloud in Public: Impact Mapping</a></li>
+</ol>
+
+  </div></td></tr>
+  <tr><td style="word-break:break-word;font-size:0px;padding:40px 0px;" class="introduction-spacer"><p style="font-size:1px;border-top:1px solid #E1E1E1;width:100%"></p><!--[if mso | IE]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:1px;margin:40px auto;border-top:1px solid #E1E1E1;width:100%;" width="30"><tr><td style="height:0;line-height:0;"> </td></tr></table><![endif]--></td></tr>
+  </tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr>
+</tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+
+    
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">As of this issue, we now have historical perspectives and definitions for <a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-status-dashboards-783150?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">status dashboards</a>, <a href="https://sunday.fudge.org/archive/794553?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Engineering SLO</a>, <a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-devcommsops-805563?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">DevCommsOps</a>, and <a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-mean-time-to-rca-815545?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Mean Time to RCA</a>. Next, let’s talk about the increasing importance of dependency mapping across hyperscale public cloud service providers and consider <a href="https://www.youtube.com/watch?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=_EEJXAuryS8" target="_blank" style="color:#06F;text-decoration:underline;">business value engineering</a> and customer journeys.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Impact Mapping in practice
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">Over the past four weeks, we covered <em>Who</em>, <em>What</em>, <em>Where, and When</em> for cloud companies that “write it down” to pursue goals for <a href="https://fudge.org/the-perfect-team/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">The Perfect Team</a>. This issue will get to the final remaining question: <em>Why</em>.</div><div style="margin:0;" class="revue-p">To get an understanding of Impact Mapping, you could start with a book of the same title. For now, assume Impact Mapping answers the question, <em>Why</em>.</div><div style="margin:0;" class="revue-p">The answer? <em>“Because that’s what the business needs.”</em>
+</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:0px;line-height:0px;text-align:left;width:100%;"><!--[if mso | IE]>
+<table  role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#3B424B;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:13px;line-height:22px;font-weight: 400;text-align:left;">
+          <!--[if mso]>
+          <table border="0" cellpadding="0" cellspacing="0" width="140" align="left" style="width:140px;"><tr><td style="padding:0 30px 30px 0;">
+          <![endif]-->
+          <a target="_blank" style="text-decoration: none;" href="https://www.thriftbooks.com/w/impact-mapping-making-a-big-impact-with-software-products-and-projects_gojko-adzic/8847273/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#isbn=0955683645">
+            <img width="140" height="140" alt="Making a Big Impact with Software Products and Projects" align="left" style="padding-right: 30px; padding-bottom: 36px;border:none;border-radius:0;outline:none;text-decoration:none;" class="link-image" src="../../s3.amazonaws.com/revue/items/images/012/073/747/thumb/7D28443CE128225F0C95F781BDDD6FCC80ED4105.jpg@1635706251" />
+</a>          <!--[if mso]>
+          </td></tr></table>
+          <![endif]-->
+        <div>
+          <div class="link-title" style="padding-bottom: 4px;font-weight:700;font-family:Helvetica,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color: #000000;font-size:20px;line-height:28px;"><a target="_blank" style="color: #000000;text-decoration: none;" href="https://www.thriftbooks.com/w/impact-mapping-making-a-big-impact-with-software-products-and-projects_gojko-adzic/8847273/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#isbn=0955683645">Making a Big Impact with Software Products and Projects</a></div>
+          <div class="serif small-text link-description" style="padding-bottom: 4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:16px;line-height:24px;color: #000000;"><div style="margin:0;" class="revue-p">Just around a decade ago, <a href="https://twitter.com/gojkoadzic?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Gojko Adzic</a> provided a practical guide to <a href="https://www.impactmapping.org?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">impact mapping</a>. In a nutshell, impact mapping helps ensure the alignment of business and delivery.</div>
+</div>
+          <div class="link-url" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:14px;line-height:24px;"><a target="_blank" style="color: #06F;text-decoration:none;font-weight:400;" href="https://www.thriftbooks.com/w/impact-mapping-making-a-big-impact-with-software-products-and-projects_gojko-adzic/8847273/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#isbn=0955683645">www.thriftbooks.com</a></div>
+        </div>
+      </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">Impact Mapping can be challenging because the public cloud is increasingly less about public access than private considerations for the public of specific places. Effectively, this means that Impact Mapping should consider the technology stack <strong>and</strong> the operating geography for the laws or regulatory landscape that may also evolve.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:28px;padding-left:30px;padding-right:30px;" class="indented"><div style='border: 1px solid #E0E4E8; border-radius: 5px; overflow: hidden;'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td align='center' valign='top'>
+<table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'>
+<td align='left' style='padding: 20px;' valign='top' width='36'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1454879951895900165"><img style="display: block; width: 42px; height: 42px; border: 0; outline: none;text-decoration:none; -ms-interpolation-mode: bicubic;" alt="Jay@Cuthrell.com" width="36" height="36" src="../../s3.amazonaws.com/revue/tweet_items/profile_images/000/173/225/thumb/5FaFLYEp_normal.png@1635724028" />
+</a></td>
+<td align='left' style='padding: 20px 20px 20px 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 16px; color: #000; font-weight: 600;'><a style="padding: 0; border:0; text-decoration: none; outline: none;color: #000;" target="_blank" href="https://twitter.com/JayCuthrell/status/1454879951895900165"><span class="__cf_email__" data-cfemail="b8f2d9c1f8fbcdccd0caddd4d496dbd7d5">[email&#160;protected]</span></a></div>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; color: #666;'><a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1454879951895900165">@JayCuthrell</a></div>
+</td>
+<td align='right' style='padding: 20px' valign='top' width='22'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none;" target="_blank" href="https://twitter.com/JayCuthrell/status/1454879951895900165"><img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="22" height="17" alt="" src="https://d3jbm9h03wxzi9.cloudfront.net/assets/email/tweet_twitter-906bd9859e16f73b5cca6d3ce1ecaf0c0f494ab16fa3f913061c7d79d3fe12e1.png" />
+</a></td>
+</table>
+</td>
+</tr>
+<tr>
+<td style='padding: 0 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 16px; color: #000;'><span>+15 years: Hyperscale public cloud service providers invest to enable globally diverse infrastructure to support well-architected frameworks.💰☁️<br><br>+15 months: GAIA-X Policy Rules and Architecture of Standards support geopolitical data sovereignty and balkanization frameworks.⚖️🤔 <a href="https://t.co/hv5wZJfOyA" rel="nofollow" style="color: #06F;" target="_blank">https://t.co/hv5wZJfOyA</a></span></div>
+</td>
+</tr>
+<tr>
+<td align='left' style='padding: 4px 20px 20px 20px;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;' valign='top'>
+<div style='font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 24px; font-size: 14px; color: #666;'>
+<a style="padding: 0; border:0; text-decoration: none; outline: none; color: #666;" target="_blank" href="https://twitter.com/JayCuthrell/status/1454879951895900165"> 2:36 PM - 31 Oct 2021
+</a></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Let&#39;s restate how we got here
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">Thinking back to our first issue and the inspiration for this series, Impact Mapping is meant to combine the “Service architecture documentation” and “Documented service dependency maps” from the <a href="https://cloudpundit.com/2021/09/22/the-cloud-is-not-just-someone-elses-computer/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">blog post</a> from <a href="https://twitter.com/cloudpundit?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">@cloudpundit</a>.</div><div style="margin:0;" class="revue-p">The “Service architecture documentation”</div><div style="margin:0;display:block;margin:0;margin-bottom:14px;padding:0 20px;border-color:#E0E4E8;border-left:2px solid #E0E4E8;color:#7A889A;line-height:inherit;" class="revue-blockquote">“helps us understand the ways a service is and isn’t resilient, so we can design accordingly”</div><div style="margin:0;" class="revue-p">The “Documented service dependency maps”</div><div style="margin:0;display:block;margin:0;margin-bottom:14px;padding:0 20px;border-color:#E0E4E8;border-left:2px solid #E0E4E8;color:#7A889A;line-height:inherit;" class="revue-blockquote">allow us to see the chain of dependencies for each of the services we use, allowing us to think about if Service X is really the best fallback alternative if Service Y goes down, as well as inform our troubleshooting"</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">When looking for evidence of Impact Mapping in hyperscale public cloud service providers, we can survey public information. Once again, the list is in no particular order or weighting other than shorter names to longer names.</div><div style="margin:0;" class="revue-p">IBM Cloud Impact Mapping examples:</div><ul class="revue-ul">
+<li style="margin:0;">
+<a href="https://www.ibm.com/cloud/architecture?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">IBM Cloud Architecture Center</a> promotes seven architectural decision points to achieve 1. Open hybrid cloud platform, 2. Data Fabric, 3. Business Automation, 4. Observability, 5. Security, 6. Regulated workloads, 7. IBM Z (which calls out 1.)</li>
+<li style="margin:0;">
+<a href="https://www.ibm.com/cloud/architecture/architecture/practices/chaos-engineering-principles/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">IBM Clouds’s principles of chaos engineering</a> is a call to action for learning to use <a href="https://www.gremlin.com/community/tutorials/chaos-engineering-using-gremlin-on-ibm-cloud/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Gremlin</a> and applying the lessons learned.</li>
+<li style="margin:0;">
+<a href="https://github.com/IBM-Cloud/vpc-ha-iac?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">IBM Cloud’s Terraform scripts</a> offer an Infrastructure as Code (IAC) way to build with resilience in mind on IBM Cloud.</li>
+</ul><div style="margin:0;" class="revue-p">Alibaba Cloud Impact Mapping examples:</div><ul class="revue-ul">
+<li style="margin:0;">
+<a href="https://www.alibabacloud.com/architecture/index?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Alibaba Cloud’s Well-Architected Framework</a> promotes a “three pillars” approach to achieve 1. Reliability, 2. Security, and 3. Performance</li>
+<li style="margin:0;">
+<a href="https://github.com/chaosblade-io/chaosblade?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Alibaba Cloud’s ChaosBlade</a> offers an open-source approach to chaos engineering based upon the internal Alibaba Cloud Application High Availability Service (AHAS), MonkeyKing (fault drill platform), and chaos engineering tool.</li>
+</ul><div style="margin:0;" class="revue-p">Microsoft Impact Mapping examples:</div><ul class="revue-ul">
+<li style="margin:0;">
+<a href="https://docs.microsoft.com/en-us/azure/architecture/framework/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Microsoft Azure Well-Architected Framework</a> promotes a “five pillars” approach to achieve 1. Reliability, 2. Security, 3. Cost Optimization, 4. Operational Excellence, 5. Performance Efficiency</li>
+<li style="margin:0;">
+<a href="https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multicloud Solutions</a> provides an AWS and Azure comparison chart to promote choice, flexibility, mitigate risk, and map dependencies.</li>
+<li style="margin:0;">
+<a href="https://docs.microsoft.com/en-us/azure/azure-monitor/vm/service-map?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Azure Monitor VM insights and Service Map</a> collects and analyzes the telemetry associated with <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/vm/service-map?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">VMs</a> and <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">applications</a>
+</li>
+<li style="margin:0;">
+<a href="https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Chaos engineering</a> is a call to action for learning about canary releases, test in production, fault injection, and applying lessons learned.</li>
+</ul><div style="margin:0;" class="revue-p">Amazon Web Services Impact Mapping examples:</div><ul class="revue-ul">
+<li style="margin:0;">
+<a href="https://aws.amazon.com/architecture/well-architected/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">AWS Architecture Center (Well-Architected Framework)</a> promotes a “five pillars” approach to achieve 1. Operational Excellence, 2. Security, 3. Reliability, 4. Performance Efficiency, 5. Cost Optimization</li>
+<li style="margin:0;">
+<a href="https://aws.amazon.com/cloud-map/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">AWS Cloud Map (Service discovery for cloud resources)</a> creates and maintains custom maps of applications that includes updated location for dynamically changing application resources.</li>
+<li style="margin:0;">
+<a href="https://aws.amazon.com/blogs/architecture/chaos-testing-with-aws-fault-injection-simulator-and-aws-codepipeline/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">AWS Fault Injection Simulator and AWS CodePipeline</a> represent a call to action to adopt chaos engineering principles and apply the lessons learned.</li>
+</ul><div style="margin:0;" class="revue-p">Google Cloud Platform Impact Mapping examples:</div><ul class="revue-ul">
+<li style="margin:0;">
+<a href="https://cloud.google.com/architecture/framework?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Google Cloud Architecture Framework</a> promotes a “six pillars” approach to achieve 1. System Design, 2. Operational Excellence, 3. Security (Privacy and Compliance), 4. Reliability, 5. Cost Optimization, 6. Performance Optimization.</li>
+<li style="margin:0;">
+<a href="https://cloud.google.com/blog/topics/hybrid-cloud/how-to-do-multicloud-right-according-to-experts?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Google Blog posts</a> are a call to action for learning about chaos engineering, <a href="https://cloud.google.com/blog/products/management-tools/shrinking-the-time-to-mitigate-production-incidents?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">SRE principles</a>, Disaster Recover Training (DiRT), and applying the lessons learned.</li>
+</ul><div style="margin:0;" class="revue-p">Oracle Cloud Infrastructure Impact Mapping examples:</div><ul class="revue-ul">
+<li style="margin:0;">
+<a href="https://blogs.oracle.com/cloud-infrastructure/post/announcing-oracle-cloud-infrastructure-best-practices-framework?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Oracle Cloud Infrastructure Best Practices Framework</a> promotes a “four pillars” approach to achieve 1. Security (and Compliance), 2. Reliability (and Resilience), 3. Performance (and Cost Optimization), 4. Operational Efficiency</li>
+<li style="margin:0;">
+<a href="https://www.oracle.com/cloud/iaas/cloud-service-mapping.html?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Oracle Cloud Service Mapping</a> provides an <a href="https://docs.oracle.com/en/solutions/oci-for-aws-professionals/index.html?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#GUID-CD0E016D-AC8A-4A18-BE78-0FD7A3E1C64E" target="_blank" style="color:#06F;text-decoration:underline;">AWS</a>, <a href="https://docs.oracle.com/en/solutions/oci-for-azure-professionals/index.html?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#GUID-F2E1DCD1-E212-42F5-A25E-EA66CC2743FD" target="_blank" style="color:#06F;text-decoration:underline;">Azure</a>, and Google Cloud comparison chart to promote choice, flexibility, mitigate risk, and map dependencies.</li>
+<li style="margin:0;">
+<a href="https://blogs.oracle.com/maa/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Oracle Cloud Blog posts</a> are a call to action for building <a href="https://blogs.oracle.com/maa/post/build-multicloud-networks-for-business-continuity-using-oracle-maximum-availability-architecture-maa-part-3?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">multicloud networks for business continuity</a> using <a href="https://www.oracle.com/database/technologies/high-availability/maa.html?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Oracle Maximum Availability Architecture (MAA)</a> and <a href="https://blogs.oracle.com/maa/post/oracle-maximum-availability-architecture-and-chaos-engineering-part-1?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">chaos engineering concepts</a>.</li>
+</ul><div style="margin:0;" class="revue-p">Notes:</div><ul class="revue-ul">
+<li style="margin:0;">For this sampling, there was no access to consoles (portals) required.</li>
+<li style="margin:0;">IBM Cloud information linked to IBM Services for frameworks references which made “pillars” comparisons difficult.</li>
+</ul>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Findings
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">In summary, there are <strong>incredibly</strong> <strong>stark variations</strong> amongst the hyperscalers in expressing Impact Mapping. Further, it is reasonable to expect the market will drive demand for standards that normalize the variations or promote wider adoption of approaches such as <a href="https://c4model.com?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">the C4 model</a>.</div><div style="margin:0;" class="revue-p"></div><ul class="revue-ul">
+<li style="margin:0;">
+<strong><em>Oracle Cloud emphasis is on 1. Security (and Compliance)</em></strong><em> </em>whereas Alibaba Cloud, AWS, and Azure place emphasis on 2. Security and Google Cloud at 3. Security (Privacy and Compliance)</li>
+<li style="margin:0;">
+<strong><em>AWS emphasis is on 1. Operational Excellence</em></strong> whereas Google Cloud has 2. Operational Excellence and both Azure and Oracle Cloud has 4. Operational Excellence (Efficiency)</li>
+<li style="margin:0;">
+<strong><em>Alibaba Cloud and Azure emphasis is on 1. Reliability</em></strong> whereas Oracle Cloud has 2. Reliability (and Resilience), AWS has 3. Reliability, and Google Cloud has 4. Reliability</li>
+<li style="margin:0;">
+<strong><em>Google Cloud emphasis is on 1. System Design</em></strong> curiously with no comparable pillars to others since the end goal is to drive towards documentation, decoupling, and managed services adoption before seeking similar pillars of other frameworks.</li>
+<li style="margin:0;">
+<strong><em>Azure and Oracle Cloud emphasis is on 3. Cost Optimization</em></strong> whereas AWS and Google Cloud has 5. Cost Optimization</li>
+<li style="margin:0;"><strong><em>Emphasis on Performance is the last or next to last pillar for Alibaba Cloud, Azure, AWS, Oracle Cloud, and Google Cloud.</em></strong></li>
+<li style="margin:0;">Looking back across these five newsletter issues, (stark) variations discovered seem to mirror similar findings from my blog post from March 2021 <a href="https://fudge.org/multicloud-march/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multicloud March</a> on low latency high bandwidth connectivity options.</li>
+</ul>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Conclusions
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">Cloud in Public findings on <a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-status-dashboards-783150?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Status Dashboards</a>, <a href="https://sunday.fudge.org/archive/794553?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Engineering SLO</a>, <a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-devcommsops-805563?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">DevCommsOps</a>, <a href="https://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-mean-time-to-rca-815545?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Mean Time to RCA</a>, and <a href="https://sunday.fudge.org/archive/826383?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Impact Mapping</a> will not be static. As such, we want to understand what the <em>Who, What, Where, When, and Why</em> means in terms of <a href="https://www.youtube.com/watch?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=_EEJXAuryS8" target="_blank" style="color:#06F;text-decoration:underline;">business value engineering</a>. </div><div style="margin:0;" class="revue-p">So, let’s get a quick overview of <a href="https://www.youtube.com/watch?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=_EEJXAuryS8" target="_blank" style="color:#06F;text-decoration:underline;">business value engineering</a> and think about the customer journey.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:650px;">
+  <a target="_blank" href="https://www.youtube.com/watch?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=_EEJXAuryS8">
+    <img alt="Matt Smith, IFS discussing Business Value Engineering on SiliconANGLE Media&#39;s theCUBE" title="Matt Smith, IFS discussing Business Value Engineering on SiliconANGLE Media&#39;s theCUBE" height="auto" src="../../s3.amazonaws.com/revue/items/images/012/076/991/mail/maxresdefault.jpg@1635717399" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="600">
+</a></td></tr></tbody></table></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:16px;" align="center"><div style="cursor:auto;color:#95989C;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-weight:400;font-size:13px;line-height:21px;text-align:center;">Matt Smith, IFS discussing Business Value Engineering on SiliconANGLE Media&#39;s theCUBE</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">Each hyperscale public cloud service provider will have to anticipate customers at various stages of a journey from status quo to one cloud or <a href="https://fudge.org/multicloud-march/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">the eventuality of mutlicloud</a>. So, having a business value engineering framework in place will ensure the following:</div><div style="margin:0;" class="revue-p"></div><ol class="revue-ol">
+<li style="margin:0;">Key business initiatives prioritization</li>
+<li style="margin:0;">Key stakeholders in a living RACI matrix</li>
+<li style="margin:0;">
+<a href="https://www.bain.com/insights/decision-insights-11-how-organizations-make-great-decisions/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Structured Decision-making frameworks</a> applied (Facts, Alternatives, Commitments, etc.)</li>
+<li style="margin:0;">Predictions are possible because data, telemetry, and instrumentation enable the proper well-architected framework underpinned with the right technology at the right time</li>
+<li style="margin:0;">Continuous improvement drives this back to step 1 again and again.</li>
+</ol><div style="margin:0;" class="revue-p">To state this another way, let’s loosely paraphrase Dean of Big Data <a href="https://www.linkedin.com/in/schmarzo/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Bill Schmarzo</a> on the essential nature of step 4 and the <em>WHILE</em>.  </div><div style="margin:0;display:block;margin:0;margin-bottom:14px;padding:0 20px;border-color:#E0E4E8;border-left:2px solid #E0E4E8;color:#7A889A;line-height:inherit;" class="revue-blockquote">The hyperscale cloud service provider must help customers achieve their initiatives <strong><em>WHILE</em></strong> they are conducting their present operational reality.</div><div style="margin:0;" class="revue-p">Help might come from so-called cloud pricing calculators like <a href="https://calculator.aws?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">AWS Pricing Calculator</a>, <a href="https://azure.microsoft.com/en-us/pricing/calculator/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Azure Pricing Calculator</a>, <a href="https://cloud.google.com/products/calculator?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Google Cloud Pricing Calculator,</a>  <a href="https://www.oracle.com/cloud/cost-estimator.html?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Oracle Cloud Cost Estimator</a>, <a href="https://www.ibm.com/cloud/cloud-calculator?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">IBM Cloud Cost Estimator</a>, or <a href="https://www.alibabacloud.com/pricing-calculator?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Alibaba Cloud Price Calculator</a>. However, in each example, there is no solid connection to Impact Mapping that permits building the business case with accurate modeling well in advance of OPEX decisions in any quantified manner.</div><div style="margin:0;" class="revue-p">Eventually, each hyperscale cloud service provider inputs from real-time pricing API or their calculators and estimators will become a consideration for business value engineering tools. So, keep an eye on tools companies for Impact Mapping updates for business value engineering (by alphabetical order) such as <a href="https://www.decisionlink.com/products-overview/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">DecisionLink ValueCloud</a>, <a href="https://mainstayadvisor.com?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Mainstay Advisor Value Platform</a>, <a href="https://www.mediafly.com/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">MediaFly Value Story Alinean</a>, and <a href="https://visualizeroi.com/value-management-leaders/?utm_campaign=Start%20the%20week%20more%20informed&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">VisualizeROI</a>.</div><div style="margin:0;" class="revue-p">Ultimately, partnering with customers in business performance improvement terms is the only way hyperscale public cloud service providers will have an enduring competitive advantage. As such, each hyperscale public cloud service provider will need to make strategic investments that help the customer uncover the highest value opportunities to leverage the proper well-architected framework that is underpinned with the right technology – and at the right time.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Work Plug!
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p"></div><div style="margin:0;" class="revue-p">If you read this far, when you think about <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">a multicloud journey</a>, keep <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Faction</a> in mind as a strategic partner for maximizing access to <a href="https://www.factioninc.com/solutions/multi-cloud-data-services/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">hyperscale public cloud service provider innovations</a>.</div><div style="margin:0;" class="revue-p">
+<a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">We’re hiring</a> at Faction!🎉🤓☁️🚀</div><div style="margin:0;" class="revue-p">To see our current openings <a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">click here</a>. ⬅️🤓☁️🚀</div><div style="margin:0;" class="revue-p">
+<a href="https://grnh.se/66f4d22d4us?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">See a fit for you or someone in your network</a>? ✅🤓☁️🚀</div><div style="margin:0;" class="revue-p">Please don’t hesitate to <a href="https://jaycuthrell.com/contact/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">reach out to me</a>.☎️🤓☁️🚀</div><div style="margin:0;" class="revue-p">Want to learn more? Here are some recent Faction related articles:</div><ol class="revue-ol">
+<li style="margin:0;">
+<a href="https://www.delltechnologies.com/en-us/blog/unlocking-the-opportunities-of-multi-cloud/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Unlocking the Opportunities of Multi-Cloud</a> by <a href="https://www.delltechnologies.com/en-us/blog/authors/travis-vigil/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Travis Vigil</a>
+</li>
+<li style="margin:0;">
+<a href="https://www.delltechnologies.com/en-us/blog/storage-and-data-protection-for-your-cloud-first-strategy/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Storage &amp; Data Protection: A Multi-Cloud Strategy</a> by <a href="https://www.delltechnologies.com/en-us/blog/authors/alyson-langon/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Alyson Langon</a>
+</li>
+<li style="margin:0;">Intelligent CIO’s <a href="https://www.intelligentcio.com/north-america/2021/10/07/myths-of-multi-cloud-whats-standing-in-the-way-of-a-streamlined-approach/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Myths of Multi-Cloud</a> by <a href="https://twitter.com/mattwallace?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Matt Wallace</a>
+</li>
+<li style="margin:0;">Dataversity’s <a href="https://www.dataversity.net/the-hidden-costs-of-cyberattacks/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">The Hidden Costs of Cyber Attacks</a> by <a href="https://www.linkedin.com/in/mikephelan-1912/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Mike Phelan</a>
+</li>
+<li style="margin:0;">
+<a href="https://thectoadvisor.com/multicloud-data-fabric-use-cases-with-faction/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multi-Cloud data fabric use cases</a> with <a href="https://thectoadvisor.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">CTOAdvisor</a>
+</li>
+<li style="margin:0;">
+<a href="https://thectoadvisor.com/faction-multicloud-technical-overview-interview-with-matt-wallace/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multi-Cloud technical overview</a> with <a href="https://thectoadvisor.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">CTOAdvisor</a>
+</li>
+<li style="margin:0;">
+<a href="https://thectoadvisor.com/multi-cloud-data-security-dell-technologies-and-faction/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multi-Cloud data security</a> with <a href="https://thectoadvisor.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">CTOAdvisor</a>
+</li>
+<li style="margin:0;">
+<a href="https://thectoadvisor.com/using-dell-powerscale-for-multi-cloud-data-access/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multi-Cloud data access</a> with <a href="https://thectoadvisor.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">CTOAdvisor</a>
+</li>
+<li style="margin:0;">
+<a href="https://www.linkedin.com/posts/kltownsend_multicloud-vmworld-activity-6851248635166957568-oEkR/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">Multi-Cloud at VMWorld</a> with <a href="https://thectoadvisor.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">CTOAdvisor</a>
+</li>
+</ol>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:24px;" align="left"><div style="cursor:auto;color:#030A10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:left;color: #000;" class="header-text">
+      Disclosure
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+      <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:30px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height: 24px;text-align:left;font-weight:400;" class="text-default">
+      <div style="margin:0;" class="revue-p">I am linking to my <a href="https://jaycuthrell.com/disclosure/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter" target="_blank" style="color:#06F;text-decoration:underline;">disclosure</a>.</div>
+
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+    
+
+
+    <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="left" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0 20px; max-width:650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="left" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:40px;padding-bottom:40px;" align="center" colspan="2"><div style="cursor:auto;background-color:#e1e1e1;height:1px;width:100%;"></div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="center" colspan="2"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:14px;text-align:center;font-weight:400;">Did you enjoy this issue? <a target="_blank" style="text-decoration:underline;color:#6F7379" href="fudge-sunday-cloud-in-public-impact-mapping-826383.html#">Yes</a> <a target="_blank" style="text-decoration:underline;color:#6F7379" href="fudge-sunday-cloud-in-public-impact-mapping-826383.html#">No</a></div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:40px;padding-bottom:40px;" align="center" colspan="2"><div style="cursor:auto;background-color:#e1e1e1;height:1px;width:100%;"></div></td></tr>
+    <tr>
+    <td style="word-break:break-word;font-size:0px;padding:0px;" align="left" width="76" valign="top">
+      <a style="text-decoration: none;" target="_blank" href="https://sunday.fudge.org/?utm_campaign=Issue&amp;utm_content=profileimage&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed">
+        <img alt="Jay Cuthrell" title="Jay Cuthrell" height="56" width="56" style="border:none;border-radius:0;display:block;outline:none;text-decoration:none;width:56px;height:56px;" src="../../s3.amazonaws.com/revue/profiles/images/000/021/457/small/IMG_2934.png@1653429860" />
+</a>    </td>
+    <td style="word-break:break-word;font-size:0px;padding:0px;" align="left">
+
+    <div style="cursor:auto;color:#333333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:16px;line-height:16px;text-align:left;font-weight:400;padding-bottom: 8px;">
+      <span style="font-weight:700;">Jay Cuthrell</span> <a style="color: #657786;text-decoration:none;" href="https://twitter.com/JayCuthrell">@JayCuthrell</a>
+      </div>
+    <div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">
+      <p>Sometimes a song, always a topic (or two), a read, and a repo -- every Sunday!</p>
+    </div></td></tr>
+  </tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+    
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="left" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin:0 20px; max-width:650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="left" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:32px;padding-left:30px;padding-right:30px;" class="indented"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;">
+<![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-bottom:40px;padding-top:40px;" align="center"><div style="cursor:auto;background-color:#e1e1e1;height:1px;width:100%;"></div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">In order to unsubscribe, click <a style="color: #6F7379; text-decoration:underline;" href="fudge-sunday-cloud-in-public-impact-mapping-826383.html#">here</a>.</div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">If you were forwarded this newsletter and you like it, you can subscribe <a target="_blank" style="color: #6F7379; text-decoration:underline;" href="https://sunday.fudge.org/?utm_campaign=Issue&amp;utm_content=forwarded&amp;utm_medium=email&amp;utm_source=Start+the+week+more+informed">here</a>.</div></td></tr>
+    <tr><td style="word-break:break-word;font-size:0px;padding:0px;padding-top:12px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:22px;text-align:left;font-weight:400;">Created with <a target="_parent" style="color: #6F7379; text-decoration:underline;" href="https://www.getrevue.co/?utm_source=Start the week more informed&amp;utm_medium=email&amp;utm_content=footerlink&amp;utm_campaign=Issue">Revue by Twitter</a>.</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="left" style="width:650px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]--><div style="margin: 0px 20px; max-width: 650px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="left" border="0"><tbody><tr><td style="text-align:left;vertical-align:top;direction:ltr;font-size:0px;padding:0px;padding-bottom:64px;padding-left:30px;padding-right:30px;"><!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:650px;"><![endif]--><div aria-labelledby="mj-column-per-100" class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#6F7379;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:14px;line-height:20px;text-align:left;">1903 Live Oak St #92 Beaufort, NC 28516-0092</div></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+</td></tr></table>
+<![endif]-->
+
+  </div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html></div>
+</section>
+<section id='issue-share'>
+<span class='share'>Share</span>
+<a class="twitter" target="_blank" href="https://www.twitter.com/share?url=http://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-impact-mapping-826383&amp;via=revue&amp;text=Fudge%20Sunday%20-%20Cloud%20in%20Public%3A%20Impact%20Mapping%20by%20%40JayCuthrell&amp;related=revue"><span class='icon-twitter'></span>
+<span class='name'>Share to Twitter</span>
+</a><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://sunday.fudge.org/issues/fudge-sunday-cloud-in-public-impact-mapping-826383"><span class='icon-facebook'></span>
+<span class='name'>Share to Facebook</span>
+</a></section>
+</section>
+<form class="subscribe-form" id="B4Bs1vtG_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1cfFkv2A62ZZEWpnhEolBCVjyqzzY5JBlPQIcBG2Ro24AIpx/qEZPkjcPtHR995bGmEP9tOZ2GBSFFYrnjApXw==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-footer" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='subscribe-form__fields'>
+<div class='subscribe-form__copy'>
+<label class="subscribe-form__label" for="member_email">Subscribe to our newsletter</label>
+<label class='subscribe-form__sublabel'>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed will receive your email address.</label>
+</div>
+<div class='subscribe-form__input'>
+<div class='input-group'>
+<input class="form-control subscribe-form__email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed" type="email" name="member[email]" id="member_email" />
+<div class='input-group-btn'><script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='sCs7FcMXfub8uMO9J2ZYew=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="zp3FiA89CaptchaCallback" class="g-recaptcha btn btn-primary subscribe-form__submit" title="Subscribe to the newsletter of Start the week more informed" value="Subscribe now"/>
+</div>
+</div>
+</div>
+</div>
+<div class='subscribe-form__error'>
+<span class='error-message'>
+
+
+</span>
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_Hwxt9h" id="confirm_Hwxt9h" autocomplete="off" />
+</div>
+
+</form><script nonce="sCs7FcMXfub8uMO9J2ZYew==">
+//<![CDATA[
+window["zp3FiA89CaptchaCallback"] = function() {
+  document.getElementById("B4Bs1vtG_new_member").submit();
+};
+
+
+//]]>
+</script>
+</article>
+<div class='container'>
+<footer class='terms'>
+<div class='footer-privacy'>
+<a target="_blank" href="https://www.getrevue.co/privacy/platform?locale=en&amp;ref=Revue+Profile">Privacy Policy</a>
+<br>
+<a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a>
+</div>
+<div class='footer-custom'>
+</div>
+<div class='footer-powered'>
+<a target="_blank" href="https://www.getrevue.co/?ref=Revue+Profile"><span>Powered by</span>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+</a></div>
+</footer>
+</div>
+
+<section id='subscribe-bar'>
+<div id='subscribe-bar-form'><form class="subscribe-form subscribe-form--inline" id="4Z6m1IV4_new_member" action="https://sunday.fudge.org/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="b/0ZSEgUKfMYCpZAvgO5PHLo6NwOUs7d0DQ6qfTOW/YCOlarSzXbqwnHwvbrvkJjTeothi6ohPwW1GTye0g0JA==" /><input type="hidden" name="member[distinct_id]" id="member_distinct_id" />
+<input value="issue-page-popup" type="hidden" name="member[subscribe_element]" id="member_subscribe_element" />
+<div class='subscribe-form__fields'>
+<div class='subscribe-form__copy'>
+<label class="subscribe-form__label" for="member_email">Subscribe to our newsletter</label>
+<label class='subscribe-form__sublabel'>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms?locale=en&amp;ref=Revue+Profile">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy?locale=en&amp;ref=Revue+Profile">Privacy Policy</a> and understand that Start the week more informed will receive your email address.</label>
+</div>
+<div class='subscribe-form__input'>
+<div class='input-group'>
+<input class="form-control subscribe-form__email" placeholder="Your email address..." title="Subscribe to the newsletter of Start the week more informed" type="email" name="member[email]" id="member_email" />
+<div class='input-group-btn'><script src="https://www.recaptcha.net/recaptcha/api.js" async defer  nonce='sCs7FcMXfub8uMO9J2ZYew=='></script>
+<input type="submit" data-sitekey="6LcRA6wZAAAAAEYg1KFtJ_b70PaAcaJwppkQihHs" data-callback="dhX0jqyICaptchaCallback" class="g-recaptcha btn btn-primary subscribe-form__submit" title="Subscribe to the newsletter of Start the week more informed" value="Subscribe now"/>
+</div>
+</div>
+</div>
+</div>
+<div class='subscribe-form__error'>
+<span class='error-message'>
+
+
+</span>
+</div>
+<div style='width: 1px; height: 1px; overflow: hidden;'>
+<input type="text" name="confirm_vPd9T9" id="confirm_vPd9T9" autocomplete="off" />
+</div>
+
+</form><script nonce="sCs7FcMXfub8uMO9J2ZYew==">
+//<![CDATA[
+window["dhX0jqyICaptchaCallback"] = function() {
+  document.getElementById("4Z6m1IV4_new_member").submit();
+};
+
+
+//]]>
+</script></div>
+</section>
+<div class='component__spacer--is-small'></div>
+
+
+
+</body>
+</html>
